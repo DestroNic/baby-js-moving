@@ -1,0 +1,34 @@
+@mixin flex-display {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+@mixin button {
+    height: 80px;
+    width: 300px;    
+    background-color: $yellow;
+    text-decoration: none;
+    font-family: inherit;
+    font-size: 1.2em;
+    color: $blue;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: 0.5s ease-in-out;
+
+                            
+}
+
+
+@mixin header {
+    background: $blue;
+    height: 60px;
+    color: $yellow;
+    text-align: center;
+
+    h1 {
+        font-size: 3em;
+        font-style: italic;
+    }
+}
