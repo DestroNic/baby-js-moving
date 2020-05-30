@@ -1,6 +1,11 @@
 @import "variables";
 @import "mixins";
 
+
+html {
+    background-color: $blue;
+}
+
 body{
     margin: 0;
     box-sizing: border-box;
@@ -24,23 +29,35 @@ body{
         }
 
         .right-nav {
-            @include flex-display();
-            justify-content: space-around;
-            width: 45%;
-            font-size: 1.2em;
+            // @include flex-display();
+            // justify-content: space-around;
+            // width: 45%;
+             font-size: 1.2em;
                   
 
             a {
-                text-decoration: none;
-                font-weight: 700;
+                float: left;
+                display: block;
                 color: $blue;
-                border-bottom: 2px solid transparent;
-                transition: 0.5s ease-in-out;
+                text-align: center;
+                padding: 14px 16px;
+                text-decoration: none;
+                
+                // text-decoration: none;
+                 font-weight: 700;
+                // color: $blue;
+                 border-bottom: 2px solid transparent;
+                 transition: 0.5s ease-in-out;
 
                 &:hover{
                     border-bottom: 2px solid $blue;
                 }
 
+            }
+
+            .icon {
+                display: none;
+                font-size: 2em;
             }
         }
     }
@@ -52,6 +69,7 @@ body{
         //z-index: 0;
         position: relative;
         color: $yellow;
+        background-size: cover;
 
         .overlay {
             background-color: $overlay;
@@ -69,10 +87,10 @@ body{
                 z-index: 1;
                 position: inherit;
                 .left-content {
+                    margin: 100px auto;
                     .logo {
                         img {
                           width: 750px;
-                          margin: 175px;  
                         }
                         
                     }
@@ -84,10 +102,14 @@ body{
                     align-items: center;
                     text-align: center;
                     .main-title {
-                        font-size: 4em;
+                        font-size: 3.5em;
                         color: $yellow;
                         font-style: italic;
                         text-align: center;
+
+                        p {
+                            padding: 0 108px;
+                        }
                     }
                     .yellow-button{
                         
@@ -277,8 +299,48 @@ body{
 
 
         }
+
+        .footer-section {
+            background-color: $blue;
+            color: white;
+            
+            .footer-contact{
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                margin-top: 50px;
+
+                .left-side {
+                    margin-top: 25px;
+                    .btn {
+                        @include button();
+                        background-color: $blue;
+                        border: 1px solid white;
+                        color: white;
+
+                        &:hover {
+                            color: black;
+                            background-color: white;
+                        }
+
+                    }
+                }
+
+                .right-side{
+                    width: 300px;
+                    text-align: center;
+                    margin-top: 25px;
+                }
+            }
+
+            .copyright {
+                text-align: center;
+            }
+        }
     
     }
 
 
 }
+
+@import "queries";
