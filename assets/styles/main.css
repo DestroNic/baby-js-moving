@@ -1,5 +1,6 @@
 html {
   background-color: #20356A;
+  scroll-behavior: smooth;
 }
 
 body {
@@ -21,11 +22,14 @@ body {
       -ms-flex-align: center;
           align-items: center;
   background-color: #F8CB5C;
+  position: -webkit-sticky;
+  position: sticky;
 }
 
 .container .navbar .left-nav {
   color: #20356A;
   font-style: italic;
+  font-weight: 700;
   margin-left: 15px;
 }
 
@@ -50,8 +54,10 @@ body {
   transition: 0.5s ease-in-out;
 }
 
-.container .navbar .right-nav a:hover {
-  border-bottom: 2px solid #20356A;
+@media not all and (pointer: coarse) {
+  .container .navbar .right-nav a:hover {
+    border-bottom: 2px solid #20356A;
+  }
 }
 
 .container .navbar .right-nav .icon {
@@ -177,6 +183,8 @@ body {
           align-items: center;
   -ms-flex-pack: distribute;
       justify-content: space-around;
+  -webkit-box-shadow: 2px 9px 5px 0px rgba(0, 0, 0, 0.75);
+          box-shadow: 2px 9px 5px 0px rgba(0, 0, 0, 0.75);
 }
 
 .container .main-footer-content .left-side {
@@ -263,6 +271,8 @@ body {
   height: 60px;
   color: #F8CB5C;
   text-align: center;
+  -webkit-box-shadow: 2px 9px 5px 0px rgba(0, 0, 0, 0.75);
+          box-shadow: 2px 9px 5px 0px rgba(0, 0, 0, 0.75);
 }
 
 .container .body-container .body-content .services-section .header h1 {
@@ -298,6 +308,8 @@ body {
   padding: 35px 50px;
   text-align: center;
   background-color: #d6d2cd;
+  -webkit-box-shadow: 2px 9px 5px 0px rgba(0, 0, 0, 0.75);
+          box-shadow: 2px 9px 5px 0px rgba(0, 0, 0, 0.75);
 }
 
 .container .body-container .body-content .services-section .services-cards .card .service-icon i {
@@ -316,6 +328,8 @@ body {
   height: 60px;
   color: #F8CB5C;
   text-align: center;
+  -webkit-box-shadow: 2px 9px 5px 0px rgba(0, 0, 0, 0.75);
+          box-shadow: 2px 9px 5px 0px rgba(0, 0, 0, 0.75);
 }
 
 .container .body-container .why-us-section .header h1 {
@@ -348,6 +362,8 @@ body {
   height: 60px;
   color: #F8CB5C;
   text-align: center;
+  -webkit-box-shadow: 2px 9px 5px 0px rgba(0, 0, 0, 0.75);
+          box-shadow: 2px 9px 5px 0px rgba(0, 0, 0, 0.75);
 }
 
 .container .body-container .about-us-section .header h1 {

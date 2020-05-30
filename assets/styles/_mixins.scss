@@ -32,3 +32,15 @@
         font-style: italic;
     }
 }
+
+@mixin hover-supported {       
+    @media not all and (pointer: coarse) {
+         &:hover {
+            @content;
+        }
+    }
+}
+
+@mixin box-shadow {
+    box-shadow: 2px 9px 5px 0px rgba(0,0,0,0.75);
+}
