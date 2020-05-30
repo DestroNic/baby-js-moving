@@ -150,7 +150,6 @@
     .container .navbar .right-nav a.icon {
       float: right;
       display: block;
-      transition: 0.5s ease-in-out;
     }
   }
   
@@ -173,4 +172,40 @@
         margin-top: 45px;
         
     }
+
+    .container .background .main-content {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+       
+    }
+
+    .container .background .main-content .left-content .logo img {
+        margin-top: -85px;
+    }
+
+    .container .background .main-content .right-content .main-title {
+        font-size: 1em;
+        margin-top: -65px;
+    }
   }
+
+  @media screen and (max-width: 600px) {
+    .container .main-footer-content .left-side{
+        font-size: 0.5em;
+    }
+
+    .container .body-container .body-content .services-section .services-cards{
+        grid-template-columns: 1fr;
+    }
+
+    .container .body-container .about-us-section .about-us-content{
+        display: flex;
+        flex-direction: column-reverse;
+    }
+    .container .body-container .about-us-section .about-us-content .about-right {
+        align-self: center;
+        gap: 20px;
+    }
+}
