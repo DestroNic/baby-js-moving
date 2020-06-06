@@ -4,6 +4,7 @@ body {
           box-sizing: border-box;
   padding: 0;
   font-family: 'Raleway', sans-serif;
+  background-color: #F8CB5C;
 }
 
 .navbar {
@@ -623,6 +624,9 @@ body {
 }
 
 @media screen and (max-width: 600px) {
+  html {
+    overflow-x: hidden;
+  }
   .container .main-footer-content .left-side {
     font-size: 0.5em;
   }
@@ -648,37 +652,48 @@ body {
   .container-quote .main-content .right-side .form-wrapper {
     -ms-grid-columns: 1fr;
         grid-template-columns: 1fr;
+    font-size: 0.8em;
   }
   .container-quote .main-content .right-side #dynamic-form .additional-info {
     -ms-grid-columns: 1fr;
         grid-template-columns: 1fr;
+    font-size: 0.8em;
   }
   .container-quote .main-content .right-side #dynamic-form .moving-form {
     -ms-grid-columns: 1fr;
         grid-template-columns: 1fr;
+    font-size: 0.8em;
   }
   .container-quote .main-content .right-side #dynamic-form .labor-only {
     -ms-grid-columns: 1fr;
         grid-template-columns: 1fr;
+    font-size: 0.8em;
   }
   .container-quote .main-content .right-side #dynamic-form .tv-wall-mount {
     -ms-grid-columns: 1fr;
         grid-template-columns: 1fr;
+    font-size: 0.8em;
   }
   .container-quote .main-content .right-side #dynamic-form .furniture-assembly {
     -ms-grid-columns: 1fr;
         grid-template-columns: 1fr;
+    font-size: 0.8em;
   }
   .container-quote .main-content .right-side #dynamic-form .packing {
     -ms-grid-columns: 1fr;
         grid-template-columns: 1fr;
+    font-size: 0.8em;
   }
   .container-quote .main-content {
     -ms-grid-columns: 0fr 1fr;
         grid-template-columns: 0fr 1fr;
+    font-size: 0.8em;
   }
   .container-quote .main-content .left-side .logo {
     display: none;
+  }
+  input {
+    height: 30px;
   }
 }
 /*# sourceMappingURL=quote.css.map */
