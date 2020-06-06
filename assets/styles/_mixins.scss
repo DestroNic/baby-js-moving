@@ -44,3 +44,24 @@
 @mixin box-shadow {
     box-shadow: 2px 9px 5px 0px rgba(0,0,0,0.75);
 }
+
+@mixin form-style {
+    .form-item {
+        display: flex;
+        flex-direction: column;
+        
+        input {
+            height: 45px;
+            border-radius: 5px;
+            border: 3px solid transparent;
+            transition: 0.5s ease-in-out;
+            font-size: 1.2em;
+
+            &:focus {
+                border: 3px solid $blue;
+            }
+        }
+
+        
+    }
+}
