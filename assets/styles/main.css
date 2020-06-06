@@ -671,5 +671,40 @@ body {
         align-self: center;
     gap: 20px;
   }
+  .container-quote .main-content .right-side .form-wrapper {
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+  }
+  .container-quote .main-content .right-side #dynamic-form .additional-info {
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+  }
+  .container-quote .main-content .right-side #dynamic-form .moving-form {
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+  }
+  .container-quote .main-content .right-side #dynamic-form .labor-only {
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+  }
+  .container-quote .main-content .right-side #dynamic-form .tv-wall-mount {
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+  }
+  .container-quote .main-content .right-side #dynamic-form .furniture-assembly {
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+  }
+  .container-quote .main-content .right-side #dynamic-form .packing {
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+  }
+  .container-quote .main-content {
+    -ms-grid-columns: 0fr 1fr;
+        grid-template-columns: 0fr 1fr;
+  }
+  .container-quote .main-content .left-side .logo {
+    display: none;
+  }
 }
 /*# sourceMappingURL=main.css.map */

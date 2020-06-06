@@ -1,6 +1,7 @@
 @import "variables";
 @import "mixins";
 
+
 body{
     margin: 0;
     box-sizing: border-box;
@@ -57,7 +58,7 @@ body{
     }
 }
 
-.container {
+.container-quote {
     .main-content {
         display: grid;
         grid-template-columns: 1fr 3fr;
@@ -260,3 +261,5 @@ body{
         }
     }
 }
+
+@import "queries";

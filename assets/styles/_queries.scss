@@ -208,4 +208,42 @@
         align-self: center;
         gap: 20px;
     }
+
+    .container-quote .main-content .right-side .form-wrapper {
+        grid-template-columns: 1fr;
+    }
+
+    .container-quote .main-content .right-side #dynamic-form .additional-info{
+        grid-template-columns: 1fr;
+    }
+
+    .container-quote .main-content .right-side #dynamic-form .moving-form {
+        grid-template-columns: 1fr;
+    }
+
+    .container-quote .main-content .right-side #dynamic-form .labor-only {
+        grid-template-columns: 1fr;
+    }
+
+    .container-quote .main-content .right-side #dynamic-form .tv-wall-mount {
+        grid-template-columns: 1fr;
+    }
+
+    .container-quote .main-content .right-side #dynamic-form .furniture-assembly {
+        grid-template-columns: 1fr;
+    }
+
+    .container-quote .main-content .right-side #dynamic-form .packing {
+        grid-template-columns: 1fr;
+    }
+
+    .container-quote .main-content {
+        grid-template-columns: 0fr 1fr;
+    }
+
+    .container-quote .main-content .left-side .logo{
+        display: none;
+
+    }
+    
 }
