@@ -1,266 +1,316 @@
 @import "variables";
 @import "mixins";
 
-
-body{
-    margin: 0;
-    box-sizing: border-box;
-    padding: 0;
-    font-family: 'Raleway', sans-serif;
-    background-color: $yellow;
+body {
+  margin: 0;
+  box-sizing: border-box;
+  padding: 0;
+  font-family: "Raleway", sans-serif;
+  background-color: $yellow;
 }
 
 .navbar {
-    @include flex-display();
-    background-color: $yellow;
-    position: sticky;
-    .left-nav {
-        color: $blue;
-        font-style: italic;
-        font-weight: 700;
-        margin-left: 15px;
-        p {
-            font-size: 1.5em;
-        }
+  @include flex-display();
+  background-color: $yellow;
+  position: sticky;
+  .left-nav {
+    color: $blue;
+    font-style: italic;
+    font-weight: 700;
+    margin-left: 15px;
+    p {
+      font-size: 1.5em;
+    }
+  }
+
+  .right-nav {
+    // @include flex-display();
+    // justify-content: space-around;
+    // width: 45%;
+    font-size: 1.2em;
+
+    a {
+      float: left;
+      display: block;
+      color: $blue;
+      text-align: center;
+      padding: 14px 16px;
+      text-decoration: none;
+
+      font-weight: 700;
+      border-bottom: 2px solid transparent;
+      transition: 0.5s ease-in-out;
+
+      @include hover-supported() {
+        border-bottom: 2px solid $blue;
+      }
     }
 
-    .right-nav {
-        // @include flex-display();
-        // justify-content: space-around;
-        // width: 45%;
-         font-size: 1.2em;
-              
-
-        a {
-            float: left;
-            display: block;
-            color: $blue;
-            text-align: center;
-            padding: 14px 16px;
-            text-decoration: none;
-            
-        
-             font-weight: 700;
-             border-bottom: 2px solid transparent;
-             transition: 0.5s ease-in-out;
-
-             @include hover-supported() {
-                border-bottom: 2px solid $blue;
-                }
-                
-            
-
-        }
-
-        .icon {
-            display: none;
-            font-size: 2em;
-        }
+    .icon {
+      display: none;
+      font-size: 2em;
     }
+  }
 }
 
 .container-quote {
-    .main-content {
-        display: grid;
-        grid-template-columns: 1fr 3fr;
+  .main-content {
+    display: grid;
+    grid-template-columns: 1fr 3fr;
 
-        .left-side{
-            background-color: $blue;
-            height: 100vh;
+    .left-side {
+      background-color: $blue;
+      height: 100vh;
 
-            .logo {
-                img {
-                    width: 100%;
-                }
+      .logo {
+        img {
+          width: 100%;
+        }
+      }
+    }
+
+    .right-side {
+      background-color: $yellow;
+      height: 100vh;
+
+      form {
+        .form-wrapper {
+          display: grid;
+          grid-template-columns: 1fr 1fr;
+          gap: 25px 40px;
+          padding: 0 50px;
+
+          @include form-style();
+        }
+        .form-selector {
+          display: grid;
+          grid-template-columns: 1fr;
+          padding: 0 50px;
+          margin: 21px 0px;
+
+          select {
+            height: 45px;
+            border-radius: 5px;
+            border: 3px solid transparent;
+            transition: 0.5s ease-in-out;
+            font-size: 1.2em;
+
+            &:focus {
+              border: 3px solid $blue;
             }
+          }
         }
 
-        .right-side{
-            background-color: $yellow;
-            height: 100vh;
+        #dynamic-form {
+          .additional-info {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 25px 40px;
+            padding: 0 50px;
+            margin: 21px 0px;
+            @include form-style();
+          }
+          .moving-form {
+            display: grid;
+            grid-template-columns: 1fr 0.7fr 0.5fr 1fr;
+            gap: 25px 40px;
+            padding: 0 50px;
+            margin: 21px 0px;
 
-            .form-wrapper {
-                display: grid;
-                grid-template-columns:  1fr  1fr;
-                gap: 25px 40px;
-                padding: 0 50px;
-                
+            @include form-style();
 
-                @include form-style();
-
-                
-                
-                
-            }
-            .form-selector{
-                display: grid;
-                grid-template-columns: 1fr;
-                padding: 0 50px;
-                margin: 21px 0px;
-
-                select {
-                    height: 45px;
-                    border-radius: 5px;
-                    border: 3px solid transparent;
-                    transition: 0.5s ease-in-out;
-                    font-size: 1.2em;
-
-
-                    &:focus {
-                        border: 3px solid $blue;
-                    }
-                }
+            input {
+              font-size: 1.2em;
+              font-family: inherit;
             }
 
-            #dynamic-form {
-                .additional-info {
-                    display: grid;
-                    grid-template-columns: 1fr 1fr;
-                    gap: 25px 40px;
-                    padding: 0 50px;
-                    margin: 21px 0px;
-                    @include form-style();
-                }
-                .moving-form{
-                    display: grid;
-                    grid-template-columns: 1fr 1fr 1fr;
-                    gap: 25px 40px;
-                    padding: 0 50px;
-                    margin: 21px 0px;
-                    
-                    @include form-style();
-
-                    input {
-                        font-size: 1.2em;
-                        font-family: inherit;
-                    }
-
-                    select {
-                        height: 50px;
-                        border-radius: 5px;
-                        font-size: 1.2em;
-                        font-family: inherit;
-                    }
-                }
-
-                .wood-refinish {
-                    display: flex;
-                    flex-direction: column;
-                    align-items: center;
-                    input[type="file"]{
-                        display: none;  
-                      }
-                      label{
-                        color: white;
-                        height: 60px;
-                        width: 250px;
-                        background-color: $blue;
-                        //position: absolute;
-                        margin: auto;
-                        font-size: 20px;
-                        display: flex;
-                        justify-content: center;
-                        align-items: center;
-                        transition: 0.5s ease-in-out;
-
-                        &:hover {
-                            background-color: white;
-                            color: $blue;
-                            cursor: pointer;
-                        }
-                      }
-                }
-
-                .labor-only {
-                    display: grid;
-                    grid-template-columns: 1fr 1fr;
-                    gap: 25px 40px;
-                    padding: 0 50px;
-                    margin: 21px 0px;
-                    @include form-style();
-                }
-
-                .tv-wall-mount {
-                    display: grid;
-                    grid-template-columns: 1fr 1fr;
-                    gap: 25px 40px;
-                    padding: 0 50px;
-                    margin: 21px 0px;
-                    @include form-style();
-
-                    select {
-                        height: 50px;
-                        border-radius: 5px;
-                        font-size: 1.2em;
-                        font-family: inherit;
-                    }
-                }
-
-                .delivery {
-                    display: flex;
-                    align-items: center;
-                    justify-content: center;
-                }
-
-                .furniture-assembly {
-                    display: grid;
-                    grid-template-columns: 1fr 1fr;
-                    gap: 25px 40px;
-                    padding: 0 50px;
-                    margin: 21px 0px;
-                    @include form-style();
-
-                    select {
-                        height: 50px;
-                        border-radius: 5px;
-                        font-size: 1.2em;
-                        font-family: inherit;
-                    }
-                }
-
-                .packing {
-                    display: grid;
-                    grid-template-columns: 1fr 1fr;
-                    gap: 25px 40px;
-                    padding: 0 50px;
-                    margin: 21px 0px;
-                    @include form-style();
-
-                    select {
-                        height: 50px;
-                        border-radius: 5px;
-                        font-size: 1.2em;
-                        font-family: inherit;
-                    }
-                }
-
+            select {
+              height: 50px;
+              border-radius: 5px;
+              font-size: 1.2em;
+              font-family: inherit;
             }
+          }
 
-            .submit-btn {
-                display: flex;
-                justify-content: center;
-                margin: 50px 0px;
+          .wood-refinish {
+            display: flex;
+            flex-direction: column;
+            
+            @include photo-upload();
+          }
 
-                input {
-                    height: 60px;
-                    width: 30%;
-                    font-family: inherit;
-                    font-size: 1.2em;
-                    background-color: $blue;
-                    color: white;
-                    transition: 0.5s ease-in-out;
+          .labor-only {
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            gap: 25px 40px;
+            padding: 0 50px;
+            margin: 21px 0px;
+            @include form-style();
+            
+            
+            
+          }
+          .labor-upload{
+              p {
+                text-align: center;
+              }
+            @include photo-upload();
+            grid-template-columns: 1fr;
+            justify-content: center;
+          }
 
-                    &:hover {
-                        background-color: white;
-                        color: $blue;
-                        cursor: pointer;
-                    }
-                }
+          .tv-wall-mount {
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            gap: 25px 40px;
+            padding: 0 50px;
+            margin: 21px 0px;
+            @include form-style();
+
+            select {
+              height: 50px;
+              border-radius: 5px;
+              font-size: 1.2em;
+              font-family: inherit;
             }
+          }
+
+          .delivery {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 25px 40px;
+            padding: 0 50px;
+            margin-top: 20px;
+            @include form-style();
 
             
+          }
+
+          .three-column {
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            gap: 25px 40px;
+            padding: 0 50px;
+            margin-top: 20px;
+            @include form-style();
+
+            select {
+              height: 53px;
+              border-radius: 5px;
+              border: 3px solid transparent;
+              transition: 0.5s ease-in-out;
+              font-size: 1em;
+  
+              &:focus {
+                border: 3px solid $blue;
+              }
+            }
+          }
+
+          .furniture-assembly {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 25px 40px;
+            padding: 0 50px;
+            margin: 21px 0px;
+            @include form-style();
+
+            select {
+              height: 50px;
+              border-radius: 5px;
+              font-size: 1.2em;
+              font-family: inherit;
+            }
+          }
+
+          .packing {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 25px 40px;
+            padding: 0 50px;
+            margin: 21px 0px;
+            @include form-style();
+
+            select {
+              height: 50px;
+              border-radius: 5px;
+              font-size: 1.2em;
+              font-family: inherit;
+            }
+          }
         }
+        .bottom-form {
+          display: flex;
+          justify-content: space-between;
+          text-align: center;
+          padding: 0 55px;
+
+          .additional-comment {
+            width: 48.5%;
+
+            textarea {
+              width: 100%;
+              resize: none;
+              border: 2px solid transparent;
+              border-radius: 5px;
+              transition: 0.5s ease-in-out;
+              font-family: inherit;
+
+              &:focus {
+                border: 2px solid $blue;
+              }
+            }
+          }
+          .time-choice {
+            width: 48.5%;
+            #time-choice-error{
+              height: 20px;
+              color: red;
+            }
+            .time-options {
+              width: 100%;
+              display: flex;
+              flex-direction: column;
+
+              .time-choices {
+                display: grid;
+                align-items: center;
+                grid-template-columns: 1fr 3fr;
+                margin: 5px 50px;
+
+                select {
+                  height: 40px;
+                  border-radius: 5px;
+                }
+              }
+            }
+          }
+        }
+
+        .submit-btn {
+          display: flex;
+          justify-content: center;
+          margin: 50px 0px;
+
+          input {
+            height: 60px;
+            width: 30%;
+            font-family: inherit;
+            font-size: 1.2em;
+            background-color: $blue;
+            color: white;
+            transition: 0.5s ease-in-out;
+
+            &:hover {
+              background-color: white;
+              color: $blue;
+              cursor: pointer;
+            }
+          }
+        }
+      }
     }
+  }
 }
 
 @import "queries";

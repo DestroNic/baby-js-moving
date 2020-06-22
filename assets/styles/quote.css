@@ -3,7 +3,7 @@ body {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   padding: 0;
-  font-family: 'Raleway', sans-serif;
+  font-family: "Raleway", sans-serif;
   background-color: #F8CB5C;
 }
 
@@ -82,16 +82,16 @@ body {
   height: 100vh;
 }
 
-.container-quote .main-content .right-side .form-wrapper {
+.container-quote .main-content .right-side form .form-wrapper {
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: 1fr  1fr;
-      grid-template-columns: 1fr  1fr;
+  -ms-grid-columns: 1fr 1fr;
+      grid-template-columns: 1fr 1fr;
   gap: 25px 40px;
   padding: 0 50px;
 }
 
-.container-quote .main-content .right-side .form-wrapper .form-item {
+.container-quote .main-content .right-side form .form-wrapper .form-item {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -101,7 +101,7 @@ body {
           flex-direction: column;
 }
 
-.container-quote .main-content .right-side .form-wrapper .form-item input {
+.container-quote .main-content .right-side form .form-wrapper .form-item input {
   height: 45px;
   border-radius: 5px;
   border: 3px solid transparent;
@@ -110,11 +110,11 @@ body {
   font-size: 1.2em;
 }
 
-.container-quote .main-content .right-side .form-wrapper .form-item input:focus {
+.container-quote .main-content .right-side form .form-wrapper .form-item input:focus {
   border: 3px solid #20356A;
 }
 
-.container-quote .main-content .right-side .form-selector {
+.container-quote .main-content .right-side form .form-selector {
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: 1fr;
@@ -123,7 +123,7 @@ body {
   margin: 21px 0px;
 }
 
-.container-quote .main-content .right-side .form-selector select {
+.container-quote .main-content .right-side form .form-selector select {
   height: 45px;
   border-radius: 5px;
   border: 3px solid transparent;
@@ -132,11 +132,11 @@ body {
   font-size: 1.2em;
 }
 
-.container-quote .main-content .right-side .form-selector select:focus {
+.container-quote .main-content .right-side form .form-selector select:focus {
   border: 3px solid #20356A;
 }
 
-.container-quote .main-content .right-side #dynamic-form .additional-info {
+.container-quote .main-content .right-side form #dynamic-form .additional-info {
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: 1fr 1fr;
@@ -146,7 +146,7 @@ body {
   margin: 21px 0px;
 }
 
-.container-quote .main-content .right-side #dynamic-form .additional-info .form-item {
+.container-quote .main-content .right-side form #dynamic-form .additional-info .form-item {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -156,7 +156,7 @@ body {
           flex-direction: column;
 }
 
-.container-quote .main-content .right-side #dynamic-form .additional-info .form-item input {
+.container-quote .main-content .right-side form #dynamic-form .additional-info .form-item input {
   height: 45px;
   border-radius: 5px;
   border: 3px solid transparent;
@@ -165,21 +165,21 @@ body {
   font-size: 1.2em;
 }
 
-.container-quote .main-content .right-side #dynamic-form .additional-info .form-item input:focus {
+.container-quote .main-content .right-side form #dynamic-form .additional-info .form-item input:focus {
   border: 3px solid #20356A;
 }
 
-.container-quote .main-content .right-side #dynamic-form .moving-form {
+.container-quote .main-content .right-side form #dynamic-form .moving-form {
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: 1fr 1fr 1fr;
-      grid-template-columns: 1fr 1fr 1fr;
+  -ms-grid-columns: 1fr 0.7fr 0.5fr 1fr;
+      grid-template-columns: 1fr 0.7fr 0.5fr 1fr;
   gap: 25px 40px;
   padding: 0 50px;
   margin: 21px 0px;
 }
 
-.container-quote .main-content .right-side #dynamic-form .moving-form .form-item {
+.container-quote .main-content .right-side form #dynamic-form .moving-form .form-item {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -189,7 +189,7 @@ body {
           flex-direction: column;
 }
 
-.container-quote .main-content .right-side #dynamic-form .moving-form .form-item input {
+.container-quote .main-content .right-side form #dynamic-form .moving-form .form-item input {
   height: 45px;
   border-radius: 5px;
   border: 3px solid transparent;
@@ -198,23 +198,23 @@ body {
   font-size: 1.2em;
 }
 
-.container-quote .main-content .right-side #dynamic-form .moving-form .form-item input:focus {
+.container-quote .main-content .right-side form #dynamic-form .moving-form .form-item input:focus {
   border: 3px solid #20356A;
 }
 
-.container-quote .main-content .right-side #dynamic-form .moving-form input {
+.container-quote .main-content .right-side form #dynamic-form .moving-form input {
   font-size: 1.2em;
   font-family: inherit;
 }
 
-.container-quote .main-content .right-side #dynamic-form .moving-form select {
+.container-quote .main-content .right-side form #dynamic-form .moving-form select {
   height: 50px;
   border-radius: 5px;
   font-size: 1.2em;
   font-family: inherit;
 }
 
-.container-quote .main-content .right-side #dynamic-form .wood-refinish {
+.container-quote .main-content .right-side form #dynamic-form .wood-refinish {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -227,11 +227,11 @@ body {
           align-items: center;
 }
 
-.container-quote .main-content .right-side #dynamic-form .wood-refinish input[type="file"] {
+.container-quote .main-content .right-side form #dynamic-form .wood-refinish input[type="file"] {
   display: none;
 }
 
-.container-quote .main-content .right-side #dynamic-form .wood-refinish label {
+.container-quote .main-content .right-side form #dynamic-form .wood-refinish label {
   color: white;
   height: 60px;
   width: 250px;
@@ -251,23 +251,23 @@ body {
   transition: 0.5s ease-in-out;
 }
 
-.container-quote .main-content .right-side #dynamic-form .wood-refinish label:hover {
+.container-quote .main-content .right-side form #dynamic-form .wood-refinish label:hover {
   background-color: white;
   color: #20356A;
   cursor: pointer;
 }
 
-.container-quote .main-content .right-side #dynamic-form .labor-only {
+.container-quote .main-content .right-side form #dynamic-form .labor-only {
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: 1fr 1fr;
-      grid-template-columns: 1fr 1fr;
+  -ms-grid-columns: 1fr 1fr 1fr;
+      grid-template-columns: 1fr 1fr 1fr;
   gap: 25px 40px;
   padding: 0 50px;
   margin: 21px 0px;
 }
 
-.container-quote .main-content .right-side #dynamic-form .labor-only .form-item {
+.container-quote .main-content .right-side form #dynamic-form .labor-only .form-item {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -277,7 +277,7 @@ body {
           flex-direction: column;
 }
 
-.container-quote .main-content .right-side #dynamic-form .labor-only .form-item input {
+.container-quote .main-content .right-side form #dynamic-form .labor-only .form-item input {
   height: 45px;
   border-radius: 5px;
   border: 3px solid transparent;
@@ -286,73 +286,66 @@ body {
   font-size: 1.2em;
 }
 
-.container-quote .main-content .right-side #dynamic-form .labor-only .form-item input:focus {
+.container-quote .main-content .right-side form #dynamic-form .labor-only .form-item input:focus {
   border: 3px solid #20356A;
 }
 
-.container-quote .main-content .right-side #dynamic-form .tv-wall-mount {
-  display: -ms-grid;
-  display: grid;
-  -ms-grid-columns: 1fr 1fr;
-      grid-template-columns: 1fr 1fr;
-  gap: 25px 40px;
-  padding: 0 50px;
-  margin: 21px 0px;
-}
-
-.container-quote .main-content .right-side #dynamic-form .tv-wall-mount .form-item {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-}
-
-.container-quote .main-content .right-side #dynamic-form .tv-wall-mount .form-item input {
-  height: 45px;
-  border-radius: 5px;
-  border: 3px solid transparent;
-  -webkit-transition: 0.5s ease-in-out;
-  transition: 0.5s ease-in-out;
-  font-size: 1.2em;
-}
-
-.container-quote .main-content .right-side #dynamic-form .tv-wall-mount .form-item input:focus {
-  border: 3px solid #20356A;
-}
-
-.container-quote .main-content .right-side #dynamic-form .tv-wall-mount select {
-  height: 50px;
-  border-radius: 5px;
-  font-size: 1.2em;
-  font-family: inherit;
-}
-
-.container-quote .main-content .right-side #dynamic-form .delivery {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+.container-quote .main-content .right-side form #dynamic-form .labor-upload {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  -ms-grid-columns: 1fr;
+      grid-template-columns: 1fr;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
 }
 
-.container-quote .main-content .right-side #dynamic-form .furniture-assembly {
+.container-quote .main-content .right-side form #dynamic-form .labor-upload p {
+  text-align: center;
+}
+
+.container-quote .main-content .right-side form #dynamic-form .labor-upload input[type="file"] {
+  display: none;
+}
+
+.container-quote .main-content .right-side form #dynamic-form .labor-upload label {
+  color: white;
+  height: 60px;
+  width: 250px;
+  background-color: #20356A;
+  margin: auto;
+  font-size: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-transition: 0.5s ease-in-out;
+  transition: 0.5s ease-in-out;
+}
+
+.container-quote .main-content .right-side form #dynamic-form .labor-upload label:hover {
+  background-color: white;
+  color: #20356A;
+  cursor: pointer;
+}
+
+.container-quote .main-content .right-side form #dynamic-form .tv-wall-mount {
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: 1fr 1fr;
-      grid-template-columns: 1fr 1fr;
+  -ms-grid-columns: 1fr 1fr 1fr;
+      grid-template-columns: 1fr 1fr 1fr;
   gap: 25px 40px;
   padding: 0 50px;
   margin: 21px 0px;
 }
 
-.container-quote .main-content .right-side #dynamic-form .furniture-assembly .form-item {
+.container-quote .main-content .right-side form #dynamic-form .tv-wall-mount .form-item {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -362,7 +355,7 @@ body {
           flex-direction: column;
 }
 
-.container-quote .main-content .right-side #dynamic-form .furniture-assembly .form-item input {
+.container-quote .main-content .right-side form #dynamic-form .tv-wall-mount .form-item input {
   height: 45px;
   border-radius: 5px;
   border: 3px solid transparent;
@@ -371,28 +364,28 @@ body {
   font-size: 1.2em;
 }
 
-.container-quote .main-content .right-side #dynamic-form .furniture-assembly .form-item input:focus {
+.container-quote .main-content .right-side form #dynamic-form .tv-wall-mount .form-item input:focus {
   border: 3px solid #20356A;
 }
 
-.container-quote .main-content .right-side #dynamic-form .furniture-assembly select {
+.container-quote .main-content .right-side form #dynamic-form .tv-wall-mount select {
   height: 50px;
   border-radius: 5px;
   font-size: 1.2em;
   font-family: inherit;
 }
 
-.container-quote .main-content .right-side #dynamic-form .packing {
+.container-quote .main-content .right-side form #dynamic-form .delivery {
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: 1fr 1fr;
       grid-template-columns: 1fr 1fr;
   gap: 25px 40px;
   padding: 0 50px;
-  margin: 21px 0px;
+  margin-top: 20px;
 }
 
-.container-quote .main-content .right-side #dynamic-form .packing .form-item {
+.container-quote .main-content .right-side form #dynamic-form .delivery .form-item {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -402,7 +395,7 @@ body {
           flex-direction: column;
 }
 
-.container-quote .main-content .right-side #dynamic-form .packing .form-item input {
+.container-quote .main-content .right-side form #dynamic-form .delivery .form-item input {
   height: 45px;
   border-radius: 5px;
   border: 3px solid transparent;
@@ -411,18 +404,202 @@ body {
   font-size: 1.2em;
 }
 
-.container-quote .main-content .right-side #dynamic-form .packing .form-item input:focus {
+.container-quote .main-content .right-side form #dynamic-form .delivery .form-item input:focus {
   border: 3px solid #20356A;
 }
 
-.container-quote .main-content .right-side #dynamic-form .packing select {
+.container-quote .main-content .right-side form #dynamic-form .three-column {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr 1fr;
+      grid-template-columns: 1fr 1fr 1fr;
+  gap: 25px 40px;
+  padding: 0 50px;
+  margin-top: 20px;
+}
+
+.container-quote .main-content .right-side form #dynamic-form .three-column .form-item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.container-quote .main-content .right-side form #dynamic-form .three-column .form-item input {
+  height: 45px;
+  border-radius: 5px;
+  border: 3px solid transparent;
+  -webkit-transition: 0.5s ease-in-out;
+  transition: 0.5s ease-in-out;
+  font-size: 1.2em;
+}
+
+.container-quote .main-content .right-side form #dynamic-form .three-column .form-item input:focus {
+  border: 3px solid #20356A;
+}
+
+.container-quote .main-content .right-side form #dynamic-form .three-column select {
+  height: 53px;
+  border-radius: 5px;
+  border: 3px solid transparent;
+  -webkit-transition: 0.5s ease-in-out;
+  transition: 0.5s ease-in-out;
+  font-size: 1em;
+}
+
+.container-quote .main-content .right-side form #dynamic-form .three-column select:focus {
+  border: 3px solid #20356A;
+}
+
+.container-quote .main-content .right-side form #dynamic-form .furniture-assembly {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr;
+      grid-template-columns: 1fr 1fr;
+  gap: 25px 40px;
+  padding: 0 50px;
+  margin: 21px 0px;
+}
+
+.container-quote .main-content .right-side form #dynamic-form .furniture-assembly .form-item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.container-quote .main-content .right-side form #dynamic-form .furniture-assembly .form-item input {
+  height: 45px;
+  border-radius: 5px;
+  border: 3px solid transparent;
+  -webkit-transition: 0.5s ease-in-out;
+  transition: 0.5s ease-in-out;
+  font-size: 1.2em;
+}
+
+.container-quote .main-content .right-side form #dynamic-form .furniture-assembly .form-item input:focus {
+  border: 3px solid #20356A;
+}
+
+.container-quote .main-content .right-side form #dynamic-form .furniture-assembly select {
   height: 50px;
   border-radius: 5px;
   font-size: 1.2em;
   font-family: inherit;
 }
 
-.container-quote .main-content .right-side .submit-btn {
+.container-quote .main-content .right-side form #dynamic-form .packing {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr;
+      grid-template-columns: 1fr 1fr;
+  gap: 25px 40px;
+  padding: 0 50px;
+  margin: 21px 0px;
+}
+
+.container-quote .main-content .right-side form #dynamic-form .packing .form-item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.container-quote .main-content .right-side form #dynamic-form .packing .form-item input {
+  height: 45px;
+  border-radius: 5px;
+  border: 3px solid transparent;
+  -webkit-transition: 0.5s ease-in-out;
+  transition: 0.5s ease-in-out;
+  font-size: 1.2em;
+}
+
+.container-quote .main-content .right-side form #dynamic-form .packing .form-item input:focus {
+  border: 3px solid #20356A;
+}
+
+.container-quote .main-content .right-side form #dynamic-form .packing select {
+  height: 50px;
+  border-radius: 5px;
+  font-size: 1.2em;
+  font-family: inherit;
+}
+
+.container-quote .main-content .right-side form .bottom-form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  text-align: center;
+  padding: 0 55px;
+}
+
+.container-quote .main-content .right-side form .bottom-form .additional-comment {
+  width: 48.5%;
+}
+
+.container-quote .main-content .right-side form .bottom-form .additional-comment textarea {
+  width: 100%;
+  resize: none;
+  border: 2px solid transparent;
+  border-radius: 5px;
+  -webkit-transition: 0.5s ease-in-out;
+  transition: 0.5s ease-in-out;
+  font-family: inherit;
+}
+
+.container-quote .main-content .right-side form .bottom-form .additional-comment textarea:focus {
+  border: 2px solid #20356A;
+}
+
+.container-quote .main-content .right-side form .bottom-form .time-choice {
+  width: 48.5%;
+}
+
+.container-quote .main-content .right-side form .bottom-form .time-choice #time-choice-error {
+  height: 20px;
+  color: red;
+}
+
+.container-quote .main-content .right-side form .bottom-form .time-choice .time-options {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.container-quote .main-content .right-side form .bottom-form .time-choice .time-options .time-choices {
+  display: -ms-grid;
+  display: grid;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-grid-columns: 1fr 3fr;
+      grid-template-columns: 1fr 3fr;
+  margin: 5px 50px;
+}
+
+.container-quote .main-content .right-side form .bottom-form .time-choice .time-options .time-choices select {
+  height: 40px;
+  border-radius: 5px;
+}
+
+.container-quote .main-content .right-side form .submit-btn {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -432,7 +609,7 @@ body {
   margin: 50px 0px;
 }
 
-.container-quote .main-content .right-side .submit-btn input {
+.container-quote .main-content .right-side form .submit-btn input {
   height: 60px;
   width: 30%;
   font-family: inherit;
@@ -443,7 +620,7 @@ body {
   transition: 0.5s ease-in-out;
 }
 
-.container-quote .main-content .right-side .submit-btn input:hover {
+.container-quote .main-content .right-side form .submit-btn input:hover {
   background-color: white;
   color: #20356A;
   cursor: pointer;

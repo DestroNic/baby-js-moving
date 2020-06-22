@@ -298,9 +298,9 @@ body {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -312,9 +312,30 @@ body {
           box-shadow: 2px 9px 5px 0px rgba(0, 0, 0, 0.75);
 }
 
+.container .body-container .body-content .services-section .services-cards .card .service-icon {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
 .container .body-container .body-content .services-section .services-cards .card .service-icon i {
   font-size: 3.5em;
   margin: 25px 0;
+  color: #20356A;
+}
+
+.container .body-container .body-content .services-section .services-cards .card h2 {
+  font-style: italic;
   color: #20356A;
 }
 
@@ -351,6 +372,14 @@ body {
   border-radius: 5px;
   padding: 35px;
   height: 82%;
+  font-size: 1.2em;
+  background-color: #d6d2cd;
+  color: #20356A;
+}
+
+.container .body-container .why-us-section .whyus-content .left-side .content-card p {
+  padding: 0px 60px;
+  margin: 50px 0px;
 }
 
 .container .body-container .why-us-section .whyus-content .right-side img {

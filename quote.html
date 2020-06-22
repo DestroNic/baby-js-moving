@@ -1,78 +1,150 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Baby J's Moving Services LLC</title>
-    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
-      rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
-    <script src="https://kit.fontawesome.com/01a923530b.js" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="./assets/styles/quote.css">
-    <script src="./assets/scripts/sctipt.js"></script>
-</head>
-<body>
+    
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <script
+      src="https://kit.fontawesome.com/01a923530b.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="./assets/styles/quote.css" />
+    
+  </head>
+  <script src="./assets/scripts/sctipt.js"></script>
+  <body>
     <div class="container-quote">
-        <div class="navbar">
-            <div class="left-nav">
-                <p>Baby J's Moving Services</p>
-            </div>
-            <div class="right-nav" id="nav-responsive">
-                
-                <a href="./index.html" class="main-element">Home</a>
-                
-                
-            </div>
+      <div class="navbar">
+        <div class="left-nav">
+          <p>Baby J's Moving Services</p>
         </div>
-        <div class="main-content">
-            <div class="left-side">
-                <div class="logo">
-                    <img src="./media/BabyJs-02.png" alt="">
-                </div>
-            </div>
-            <div class="right-side">
-                <form action="process.php" method="POST" enctype="multipart/form-data">
-                    <div class="form-selector">
-                        <label for="service">Services</label>
-                        <select name="service" id="services" onchange="serviceSelect();">
-                            <option value="null">Select a service to request quote</option>
-                            <option value="moving">Standard Moving</option>
-                            <option value="wood-refinish">Wood Refinish</option>
-                            <option value="labor-only">Labor Only</option>
-                            <option value="tv-wall-mount">TV Wall Mount</option>
-                            <option value="delivery">Delivery</option>
-                            <option value="furniture-assembly">Furniture Assembly and Disassembly</option>
-                            <option value="packing">Packing</option>
-                        </select>
-                        
-                    </div>
-                    <div class="form-wrapper">
-                    <div class="form-item">
-                        <label for="name">First Name</label>
-                        <input name="name" type="text">
-                    </div>
-                    <div class="form-item">
-                        <label for="lname">Last Name</label>
-                        <input name="lname" type="text">
-                    </div>
-                    <div class="form-item">
-                        <label for="phone">Phone</label>
-                        <input name="phone" type="text">
-                    </div>
-                    <div class="form-item">
-                        <label for="email">Email</label>
-                        <input name="email" type="text">
-                    </div>
-                    
-                </div>
-                <div id="dynamic-form"></div>
-                 <div class="submit-btn">   
-                    <input type="submit" value="Submit" name="submit">
-                </div>
-                </form>
-                
-            </div>
+        <div class="right-nav" id="nav-responsive">
+          <a href="./index.html" class="main-element">Home</a>
         </div>
+      </div>
+
+      <div class="main-content">
+        <div class="left-side">
+          <div class="logo">
+            <img src="./media/BabyJs-02.png" alt="" />
+          </div>
+        </div>
+        <div class="right-side">
+          <div class="quote-header">
+            <h1>Request your FREE quote</h1>
+          </div>
+          <form
+            action="assets/scripts/process.php"
+            method="POST"
+            enctype="multipart/form-data"
+          >
+            <div class="form-selector">
+              <label for="service">Services</label>
+              <select name="service" id="services" onchange="serviceSelect();">
+                <option value="null">Select a service to request quote</option>
+                <option value="moving">Standard Moving</option>
+                <option value="wood-refinish">Wood Refinish</option>
+                <option value="labor-only">Labor Only</option>
+                <option value="tv-wall-mount">TV Wall Mount</option>
+                <option value="delivery">Delivery</option>
+                <option value="furniture-assembly"
+                  >Furniture Assembly and Disassembly</option
+                >
+                <option value="packing">Packing</option>
+              </select>
+            </div>
+            <div class="form-wrapper">
+              <div class="form-item">
+                <label for="name">First Name</label>
+                <input name="name" type="text" />
+              </div>
+              <div class="form-item">
+                <label for="lname">Last Name</label>
+                <input name="lname" type="text" />
+              </div>
+              <div class="form-item">
+                <label for="phone">Phone</label>
+                <input name="phone" type="text" />
+              </div>
+              <div class="form-item">
+                <label for="email">Email</label>
+                <input name="email" type="text" />
+              </div>
+            </div>
+            <div id="dynamic-form"></div>
+            <div class="bottom-form">
+              <div class="additional-comment">
+                <p>Additional Comments</p>
+                <textarea
+                  name="add-comment"
+                  id="add-comment"
+                  cols="30"
+                  rows="10"
+                ></textarea>
+              </div>
+              <div class="time-choice">
+                <p>Preferred Time of Day</p>
+                <div id="time-choice-error"></div>
+                <div class="time-options">
+                  <div class="time-choices">
+                  <label for="first-choice">First Choice</label>
+                  <select name="first-choice" id="first-choice">
+                    <option value="null">Choose one</option>
+                    <option value="morning">Morning</option>
+                    <option value="afternoon">Afternoon</option>
+                    <option value="night">Night</option>
+                  </select>
+                </div>
+                <div class="time-choices">
+                  <label for="second-choice">Second Choice</label>
+                  <select
+                    name="second-choice"
+                    id="second-choice"
+                    onchange="preferredTimeValidation()"
+                  >
+                    <option value="null">Choose one</option>
+                    <option value="morning">Morning</option>
+                    <option value="afternoon">Afternoon</option>
+                    <option value="night">Night</option>
+                  </select>
+                </div>
+                <div class="time-choices">
+                  <label for="third-choice">Third Choice</label>
+                  <select
+                    name="third-choice"
+                    id="third-choice"
+                    onchange="preferredTimeValidation()"
+                  >
+                    <option value="null">Choose one</option>
+                    <option value="morning">Morning</option>
+                    <option value="afternoon">Afternoon</option>
+                    <option value="night">Night</option>
+                  </select>
+                </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="submit-btn">
+              <input
+                id="submit-button"
+                type="submit"
+                value="Submit"
+                name="submit"
+              />
+            </div>
+          </form>
+        </div>
+      </div>
     </div>
-</body>
+  </body>
 </html>

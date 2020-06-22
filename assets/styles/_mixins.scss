@@ -20,6 +20,31 @@
                             
 }
 
+@mixin photo-upload {
+    align-items: center;
+            input[type="file"] {
+              display: none;
+            }
+            label {
+              color: white;
+              height: 60px;
+              width: 250px;
+              background-color: $blue;
+              //position: absolute;
+              margin: auto;
+              font-size: 20px;
+              display: flex;
+              justify-content: center;
+              align-items: center;
+              transition: 0.5s ease-in-out;
+
+              &:hover {
+                background-color: white;
+                color: $blue;
+                cursor: pointer;
+              }
+            }
+}
 
 @mixin header {
     background: $blue;
