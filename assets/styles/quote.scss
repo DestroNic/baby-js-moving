@@ -1,5 +1,6 @@
 @import "variables";
 @import "mixins";
+@import "quote-queries";
 
 body {
   margin: 0;
@@ -72,6 +73,22 @@ body {
     .right-side {
       background-color: $yellow;
       height: 100vh;
+
+      .quote-header {
+        color: $blue;
+        font-style: italic;
+        font-weight: 700;
+        text-align: center;
+        
+        h1 {
+          font-size: 2.5em;
+        }
+      }
+      
+      .error-handler{
+        height: 25px;
+        color: red;
+        }
 
       form {
         .form-wrapper {
@@ -312,5 +329,7 @@ body {
     }
   }
 }
+
+
 
 @import "queries";

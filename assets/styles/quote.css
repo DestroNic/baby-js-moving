@@ -82,6 +82,22 @@ body {
   height: 100vh;
 }
 
+.container-quote .main-content .right-side .quote-header {
+  color: #20356A;
+  font-style: italic;
+  font-weight: 700;
+  text-align: center;
+}
+
+.container-quote .main-content .right-side .quote-header h1 {
+  font-size: 2.5em;
+}
+
+.container-quote .main-content .right-side .error-handler {
+  height: 25px;
+  color: red;
+}
+
 .container-quote .main-content .right-side form .form-wrapper {
   display: -ms-grid;
   display: grid;
@@ -800,7 +816,7 @@ body {
   }
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 850px) {
   html {
     overflow-x: hidden;
   }
@@ -826,37 +842,49 @@ body {
         align-self: center;
     gap: 20px;
   }
-  .container-quote .main-content .right-side .form-wrapper {
+  .container-quote .main-content .right-side form .form-wrapper {
     -ms-grid-columns: 1fr;
         grid-template-columns: 1fr;
     font-size: 0.8em;
   }
-  .container-quote .main-content .right-side #dynamic-form .additional-info {
+  .container-quote .main-content .right-side form #dynamic-form .additional-info {
     -ms-grid-columns: 1fr;
         grid-template-columns: 1fr;
     font-size: 0.8em;
   }
-  .container-quote .main-content .right-side #dynamic-form .moving-form {
+  .container-quote .main-content .right-side form #dynamic-form .moving-form {
     -ms-grid-columns: 1fr;
         grid-template-columns: 1fr;
     font-size: 0.8em;
   }
-  .container-quote .main-content .right-side #dynamic-form .labor-only {
+  .container-quote .main-content .right-side form #dynamic-form .labor-only {
     -ms-grid-columns: 1fr;
         grid-template-columns: 1fr;
     font-size: 0.8em;
   }
-  .container-quote .main-content .right-side #dynamic-form .tv-wall-mount {
+  .container-quote .main-content .right-side form #dynamic-form .tv-wall-mount {
     -ms-grid-columns: 1fr;
         grid-template-columns: 1fr;
     font-size: 0.8em;
   }
-  .container-quote .main-content .right-side #dynamic-form .furniture-assembly {
+  .container-quote .main-content .right-side form #dynamic-form .delivery {
     -ms-grid-columns: 1fr;
         grid-template-columns: 1fr;
     font-size: 0.8em;
   }
-  .container-quote .main-content .right-side #dynamic-form .packing {
+  .container-quote .main-content .right-side form #dynamic-form .three-column {
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+    font-size: 0.8em;
+  }
+  .container-quote .main-content .right-side form #dynamic-form .furniture-assembly {
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+    -ms-grid-columns: 0.8;
+        grid-template-columns: 0.8;
+    font-size: 0.8em;
+  }
+  .container-quote .main-content .right-side form #dynamic-form .packing {
     -ms-grid-columns: 1fr;
         grid-template-columns: 1fr;
     font-size: 0.8em;
@@ -865,6 +893,23 @@ body {
     -ms-grid-columns: 0fr 1fr;
         grid-template-columns: 0fr 1fr;
     font-size: 0.8em;
+  }
+  .container-quote .main-content .right-side form .bottom-form {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+    font-size: 0.8em;
+    padding: 0px;
+  }
+  .container-quote .main-content .right-side form .bottom-form .additional-comment {
+    width: 100%;
+  }
+  .container-quote .main-content .right-side form .bottom-form .additional-comment textarea {
+    width: 80%;
+  }
+  .container-quote .main-content .right-side form .bottom-form .time-choice .time-options {
+    width: 87vw;
   }
   .container-quote .main-content .left-side .logo {
     display: none;

@@ -21,6 +21,7 @@
     
   </head>
   <script src="./assets/scripts/sctipt.js"></script>
+  
   <body>
     <div class="container-quote">
       <div class="navbar">
@@ -42,6 +43,7 @@
           <div class="quote-header">
             <h1>Request your FREE quote</h1>
           </div>
+          <div class="error-handler"></div>
           <form
             action="assets/scripts/process.php"
             method="POST"
@@ -63,21 +65,21 @@
               </select>
             </div>
             <div class="form-wrapper">
-              <div class="form-item">
+              <div class="form-item" >
                 <label for="name">First Name</label>
-                <input name="name" type="text" />
+                <input name="name" type="text" onfocusout="formValidator();" required />
               </div>
               <div class="form-item">
                 <label for="lname">Last Name</label>
-                <input name="lname" type="text" />
+                <input name="lname" type="text" required/>
               </div>
               <div class="form-item">
                 <label for="phone">Phone</label>
-                <input name="phone" type="text" />
+                <input name="phone" type="phone" required/>
               </div>
               <div class="form-item">
                 <label for="email">Email</label>
-                <input name="email" type="text" />
+                <input name="email" type="text" required/>
               </div>
             </div>
             <div id="dynamic-form"></div>
@@ -97,7 +99,7 @@
                 <div class="time-options">
                   <div class="time-choices">
                   <label for="first-choice">First Choice</label>
-                  <select name="first-choice" id="first-choice">
+                  <select name="first-choice" id="first-choice" required>
                     <option value="null">Choose one</option>
                     <option value="morning">Morning</option>
                     <option value="afternoon">Afternoon</option>
@@ -110,6 +112,7 @@
                     name="second-choice"
                     id="second-choice"
                     onchange="preferredTimeValidation()"
+                    required
                   >
                     <option value="null">Choose one</option>
                     <option value="morning">Morning</option>
@@ -123,6 +126,7 @@
                     name="third-choice"
                     id="third-choice"
                     onchange="preferredTimeValidation()"
+                    required
                   >
                     <option value="null">Choose one</option>
                     <option value="morning">Morning</option>
@@ -147,4 +151,5 @@
       </div>
     </div>
   </body>
+  <script src="./assets/scripts/validator.js"></script>
 </html>

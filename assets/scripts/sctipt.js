@@ -22,26 +22,26 @@ const responsiveMenu = () => {
             <div class="additional-info">
                 <div class="form-item">
                     <label for="addfrom">Address From</label>
-                    <input name="addfrom" type="text">
+                    <input name="addfrom" type="text" required>
                 </div>
                 <div class="form-item">
                     <label for="addto">Address To</label>
-                    <input name="addto" type="text">
+                    <input name="addto" type="text" required>
                 </div>
                 <div class="form-item">
                     <label for="ready-to-move">Are items ready to be moved?</label>
-                    <input name="ready-to-move" type="text">
+                    <input name="ready-to-move" type="text" required>
                 </div>
                 <div class="form-item">
                     <label for="where-to-park">Where should we park?</label>
-                    <input name="where-to-park" type="text">
+                    <input name="where-to-park" type="text" required>
                 </div>
             </div>
             
             <div class="moving-form">
                 <div class="form-item">
                     <label for="date">Date</label>
-                    <input name="date" type="date">
+                    <input name="date" type="date" required>
                 </div>
                 <div class="form-item">   
                     <label for="stairs">Stairs?</label>
@@ -66,7 +66,7 @@ const responsiveMenu = () => {
             formBody.innerHTML = `
             <div class="wood-refinish">
                 <p>Please add a photo of the item you are inquiring about</p>    
-                <input type="file" name="file" id="file" accept="image/*" />
+                <input type="file" name="file" id="file" accept="image/*" required/>
                 <label for="file"><i class="material-icons">add_photo_alternate</i>Choose a photo</label>
             </div>
             `;
@@ -84,7 +84,7 @@ const responsiveMenu = () => {
                     </div>
                     <div class="form-item">
                     <label for="date">Date</label>
-                    <input name="date" type="date">
+                    <input name="date" type="date" required>
                 </div>
                 
 
@@ -101,11 +101,11 @@ const responsiveMenu = () => {
                 <div class="tv-wall-mount">
                     <div class="form-item">
                         <label for="type-wall">Type of Wall</label>
-                        <input name="type-wall" type="text">
+                        <input name="type-wall" type="text" required>
                     </div>
                     <div class="form-item">
                         <label for="tv-size">Size of TV</label>
-                        <input name="tv-size" type="text">
+                        <input name="tv-size" type="text" required>
                     </div>
                     <div class="form-item">   
                     <label for="hid-cords">Hidden Cords?</label>
@@ -120,11 +120,11 @@ const responsiveMenu = () => {
                     </div>
                     <div class="form-item">
                         <label for="have-wall-mount">Do you have a wall mount?</label>
-                        <input name="have-wall-mount" type="text">
+                        <input name="have-wall-mount" type="text" required>
                     </div>
                     <div class="form-item">
                     <label for="date">Date</label>
-                    <input name="date" type="date">
+                    <input name="date" type="date" required>
                 </div>
                 </div>
             `;
@@ -134,11 +134,11 @@ const responsiveMenu = () => {
                 <div class="delivery">
                     <div class="form-item">
                         <label for="addfrom">Address From</label>
-                        <input name="addfrom" type="text">
+                        <input name="addfrom" type="text" required>
                     </div>
                     <div class="form-item">
                         <label for="addto">Address To</label>
-                        <input name="addto" type="text">
+                        <input name="addto" type="text" required>
                     </div>
                     
                 </div>
@@ -149,7 +149,7 @@ const responsiveMenu = () => {
                     </div>
                     <div class="form-item">
                         <label for="date">Date</label>
-                        <input name="date" type="date">
+                        <input name="date" type="date" required>
                     </div>
                     <div class="form-item">   
                         <label for="item-seller">Item seller?</label>
@@ -169,7 +169,7 @@ const responsiveMenu = () => {
                 <div class="furniture-assembly">
                     <div class="form-item">
                     <label for="furniture-assmbl">Need to assembly or disassembly?</label>
-                        <select name="furniture-assmbl" id="furniture-assmbl">
+                        <select name="furniture-assmbl" id="furniture-assmbl" required>
                             <option value="assembly">Assembly</option>
                             <option value="disassembly">Disassembly</option>
                         </select>
@@ -183,7 +183,7 @@ const responsiveMenu = () => {
                 </div>
                 <div class="wood-refinish">
                 <p>Please add a picture of the item you are inquiring about</p>    
-                <input type="file" name="file" id="file" accept="image/*" />
+                <input type="file" name="file" id="file" accept="image/*" required/>
                 <label for="file"><i class="material-icons">add_photo_alternate</i>Choose a photo</label>
             </div>
             `;
@@ -200,7 +200,7 @@ const responsiveMenu = () => {
                     </div>
                     <div class="form-item">
                         <label for="rooms">How many rooms?</label>
-                        <input name="rooms" type="number">
+                        <input name="rooms" type="number" required>
                     </div>
                 </div>
             `;
@@ -226,6 +226,9 @@ const responsiveMenu = () => {
           document.getElementById("time-choice-error").innerHTML = "";
         } 
       }
+
+
+
 
 
 

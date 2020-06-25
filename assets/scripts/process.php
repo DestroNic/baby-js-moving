@@ -9,12 +9,14 @@ function confirmation(){
     ";
 }
 
-if($_POST['moving'] ) 
-{ 
    $name = $_POST['name'];
    $lname = $_POST['lname'];
    $phone = $_POST['phone'];
    $email = $_POST['email'];
+
+if($_POST['moving'] ) 
+{ 
+   
    $addfrom = $_POST['addfrom'];
    $addto = $_POST['addto'];
    $date = $_POST['date'];
