@@ -66,7 +66,7 @@ const responsiveMenu = () => {
             formBody.innerHTML = `
             <div class="wood-refinish">
                 <p>Please add a photo of the item you are inquiring about</p>    
-                <input type="file" name="file" id="file" accept="image/*" required/>
+                <input type="file" name="file" id="file" accept="image/*" multiple/>
                 <label for="file"><i class="material-icons">add_photo_alternate</i>Choose a photo</label>
             </div>
             `;
@@ -91,7 +91,7 @@ const responsiveMenu = () => {
                 </div>
                 <div class="labor-upload">
                 <p>Please add a photo of the item you are inquiring about</p>    
-                <input type="file" name="file" id="file" accept="image/*" />
+                <input type="file" name="file" id="file" accept="image/*" multiple/>
                 <label for="file"><i class="material-icons">add_photo_alternate</i>Choose a photo</label>
                 </div>
             `;
@@ -183,7 +183,7 @@ const responsiveMenu = () => {
                 </div>
                 <div class="wood-refinish">
                 <p>Please add a picture of the item you are inquiring about</p>    
-                <input type="file" name="file" id="file" accept="image/*" required/>
+                <input type="file" name="file" id="file" accept="image/*" multiple/>
                 <label for="file"><i class="material-icons">add_photo_alternate</i>Choose a photo</label>
             </div>
             `;

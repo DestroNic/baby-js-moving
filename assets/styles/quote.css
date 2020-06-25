@@ -842,56 +842,18 @@ body {
         align-self: center;
     gap: 20px;
   }
-  .container-quote .main-content .right-side form .form-wrapper {
-    -ms-grid-columns: 1fr;
-        grid-template-columns: 1fr;
-    font-size: 0.8em;
-  }
-  .container-quote .main-content .right-side form #dynamic-form .additional-info {
-    -ms-grid-columns: 1fr;
-        grid-template-columns: 1fr;
-    font-size: 0.8em;
-  }
-  .container-quote .main-content .right-side form #dynamic-form .moving-form {
-    -ms-grid-columns: 1fr;
-        grid-template-columns: 1fr;
-    font-size: 0.8em;
-  }
-  .container-quote .main-content .right-side form #dynamic-form .labor-only {
-    -ms-grid-columns: 1fr;
-        grid-template-columns: 1fr;
-    font-size: 0.8em;
-  }
-  .container-quote .main-content .right-side form #dynamic-form .tv-wall-mount {
-    -ms-grid-columns: 1fr;
-        grid-template-columns: 1fr;
-    font-size: 0.8em;
-  }
-  .container-quote .main-content .right-side form #dynamic-form .delivery {
-    -ms-grid-columns: 1fr;
-        grid-template-columns: 1fr;
-    font-size: 0.8em;
-  }
-  .container-quote .main-content .right-side form #dynamic-form .three-column {
-    -ms-grid-columns: 1fr;
-        grid-template-columns: 1fr;
-    font-size: 0.8em;
-  }
-  .container-quote .main-content .right-side form #dynamic-form .furniture-assembly {
-    -ms-grid-columns: 1fr;
-        grid-template-columns: 1fr;
-    -ms-grid-columns: 0.8;
-        grid-template-columns: 0.8;
-    font-size: 0.8em;
-  }
-  .container-quote .main-content .right-side form #dynamic-form .packing {
-    -ms-grid-columns: 1fr;
-        grid-template-columns: 1fr;
-    font-size: 0.8em;
-  }
+  .container-quote .main-content .right-side form .form-wrapper,
+  .container-quote .main-content .right-side form #dynamic-form .additional-info,
+  .container-quote .main-content .right-side form #dynamic-form .moving-form,
+  .container-quote .main-content .right-side form #dynamic-form .labor-only,
+  .container-quote .main-content .right-side form #dynamic-form .tv-wall-mount,
+  .container-quote .main-content .right-side form #dynamic-form .delivery,
+  .container-quote .main-content .right-side form #dynamic-form .three-column,
+  .container-quote .main-content .right-side form #dynamic-form .furniture-assembly,
+  .container-quote .main-content .right-side form #dynamic-form .packing,
   .container-quote .main-content {
-    -ms-grid-columns: 0fr 1fr;
-        grid-template-columns: 0fr 1fr;
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
     font-size: 0.8em;
   }
   .container-quote .main-content .right-side form .bottom-form {
@@ -910,6 +872,9 @@ body {
   }
   .container-quote .main-content .right-side form .bottom-form .time-choice .time-options {
     width: 87vw;
+  }
+  .container-quote .main-content .left-side {
+    display: none;
   }
   .container-quote .main-content .left-side .logo {
     display: none;

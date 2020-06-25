@@ -215,53 +215,18 @@
     }
 
 
-    .container-quote .main-content .right-side form .form-wrapper {
+    .container-quote .main-content .right-side form .form-wrapper,
+    .container-quote .main-content .right-side form #dynamic-form .additional-info,
+    .container-quote .main-content .right-side form #dynamic-form .moving-form,
+    .container-quote .main-content .right-side form #dynamic-form .labor-only,
+    .container-quote .main-content .right-side form #dynamic-form .tv-wall-mount,
+    .container-quote .main-content .right-side form #dynamic-form .delivery,
+    .container-quote .main-content .right-side form #dynamic-form .three-column,
+    .container-quote .main-content .right-side form #dynamic-form .furniture-assembly,
+    .container-quote .main-content .right-side form #dynamic-form .packing,
+    .container-quote .main-content
+     {
         grid-template-columns: 1fr;
-        font-size: 0.8em;
-    }
-
-    .container-quote .main-content .right-side form #dynamic-form .additional-info{
-        grid-template-columns: 1fr;
-        font-size: 0.8em;
-    }
-
-    .container-quote .main-content .right-side form #dynamic-form .moving-form {
-        grid-template-columns: 1fr;
-        font-size: 0.8em;
-    }
-
-    .container-quote .main-content .right-side form #dynamic-form .labor-only {
-        grid-template-columns: 1fr;
-        font-size: 0.8em;
-    }
-
-    .container-quote .main-content .right-side form #dynamic-form .tv-wall-mount {
-        grid-template-columns: 1fr;
-        font-size: 0.8em;
-    }
-
-    .container-quote .main-content .right-side form #dynamic-form .delivery {
-        grid-template-columns: 1fr;
-        font-size: 0.8em;
-    }
-
-    .container-quote .main-content .right-side form #dynamic-form .three-column {
-        grid-template-columns: 1fr;
-        font-size: 0.8em;
-    }
-
-    .container-quote .main-content .right-side form #dynamic-form .furniture-assembly {        grid-template-columns: 1fr;
-        grid-template-columns: 0.8;
-        font-size: 0.8em;
-    }
-
-    .container-quote .main-content .right-side form #dynamic-form .packing {
-        grid-template-columns: 1fr;
-        font-size: 0.8em;
-    }
-
-    .container-quote .main-content {
-        grid-template-columns: 0fr 1fr;
         font-size: 0.8em;
     }
 
@@ -282,6 +247,10 @@
 
     .container-quote .main-content .right-side form .bottom-form .time-choice .time-options {
         width: 87vw;
+    }
+
+    .container-quote .main-content .left-side{
+        display: none;
     }
 
     .container-quote .main-content .left-side .logo{
