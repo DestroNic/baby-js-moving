@@ -56,7 +56,7 @@ const responsiveMenu = () => {
                 </div>
                 <div class="form-item">
                     <label for="number-movers">Number of Movers</label>
-                    <input name="number-movers type="number">
+                    <input name="number-movers" type="text">
                 </div>
             </div>
             `;
