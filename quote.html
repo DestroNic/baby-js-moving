@@ -20,7 +20,10 @@
     <link rel="stylesheet" href="./assets/styles/quote.css" />
     
   </head>
-  <script src="./assets/scripts/sctipt.js"></script>
+  <script src="./assets/scripts/script.js"></script>
+
+  <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAnkcfEFGnzGGaLksiKC4jiGDYSDgM3qh0&libraries=places"></script>
+
   
   <body>
     <div class="container-quote">
@@ -37,7 +40,13 @@
         <div class="left-side">
           <div class="logo">
             <img src="./media/BabyJs-02.png" alt="" />
-          </div>
+            <div class="quote-overlay">
+              <h1>You can also contact us at:</h1><br>
+              <h3>1-888-888-8888</h3><br>
+              <h3>babyjsmoving@gmail.com</h3><br>
+            </div>
+        </div>
+        
         </div>
         <div class="right-side">
           <div class="quote-header">
@@ -54,20 +63,20 @@
               <select name="service" id="services" onchange="serviceSelect();">
                 <option value="null">Select a service to request quote</option>
                 <option value="moving">Standard Moving</option>
-                <option value="wood-refinish">Wood Refinish</option>
+                <!-- <option value="wood-refinish">Wood Refinish</option> -->
                 <option value="labor-only">Labor Only</option>
-                <option value="tv-wall-mount">TV Wall Mount</option>
+                <!-- <option value="tv-wall-mount">TV Wall Mount</option> -->
                 <option value="delivery">Delivery</option>
-                <option value="furniture-assembly"
+                <!-- <option value="furniture-assembly"
                   >Furniture Assembly and Disassembly</option
-                >
-                <option value="packing">Packing</option>
+                > -->
+                <!-- <option value="packing">Packing</option> -->
               </select>
             </div>
             <div class="form-wrapper">
               <div class="form-item" >
                 <label for="name">First Name</label>
-                <input name="name" type="text" onfocusout="formValidator();" required />
+                <input name="name" type="text" required />
               </div>
               <div class="form-item">
                 <label for="lname">Last Name</label>

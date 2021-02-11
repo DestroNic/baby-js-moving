@@ -1,3 +1,245 @@
+@media only screen and (max-width: 1546px) {
+  .container .navbar .right-nav {
+    font-size: 1em;
+  }
+  .container .background .main-content .left-content .logo img {
+    width: 500px;
+  }
+  .container .background .main-content .right-content .main-title {
+    font-size: 2.5em;
+  }
+  .container .background {
+    height: 633px;
+    background-size: cover;
+  }
+  .container .body-container .body-content .services-section .services-cards .card .service-description {
+    font-size: 1em;
+  }
+}
+
+@media only screen and (max-width: 1088px) {
+  .container .background .main-content .right-content .main-title {
+    font-size: 2em;
+  }
+  .container .background .main-content .right-content .main-title p {
+    padding: 0px;
+  }
+  .container .body-container .body-content {
+    width: 95%;
+  }
+  .container .background .main-content .right-content .yellow-button .btn {
+    width: 240px;
+    height: 60px;
+  }
+}
+
+@media only screen and (max-width: 952px) {
+  .container .navbar .left-nav p {
+    font-size: 1em;
+  }
+  .container .navbar {
+    font-size: 0.8em;
+  }
+  .container .background {
+    height: 460px;
+  }
+  .container .background .main-content .left-content .logo img {
+    width: 300px;
+  }
+  .container .background .main-content .right-content .main-title p {
+    font-size: 0.8em;
+  }
+  .container .background .main-content .right-content .yellow-button .btn {
+    width: 180px;
+    height: 40px;
+    font-size: 0.8em;
+  }
+  .container .background .main-footer {
+    font-size: 0.8em;
+  }
+  .container .background .main-content .right-content .call-us {
+    font-size: 0.8em;
+  }
+  .container .main-footer-content .right-side {
+    display: none;
+  }
+  .container .main-footer-content {
+    height: 160px;
+  }
+  .container .main-footer-content .left-side {
+    font-size: 0.8em;
+  }
+  .container .body-container .body-content .services-section .header h1 {
+    font-size: 2em;
+  }
+  .container .body-container .body-content .services-section .services-cards .card .service-description {
+    font-size: 0.8em;
+  }
+  .container .body-container .why-us-section .header h1 {
+    font-size: 2em;
+  }
+  .container .body-container .why-us-section .whyus-content .left-side .content-card {
+    font-size: 0.8em;
+    height: 72%;
+  }
+  .container .body-container .about-us-section .about-us-content .about-right .about-info-wrapper .about-info {
+    font-size: 0.8em;
+  }
+  .container .body-container .about-us-section .header h1 {
+    font-size: 2em;
+  }
+  .container .body-container .about-us-section .about-us-content .about-left .iframe {
+    height: 350px;
+    width: 400px;
+  }
+  .container .body-container .footer-section .footer-contact .left-side .btn {
+    width: 180px;
+    height: 40px;
+    font-size: 0.8em;
+  }
+  .container .body-container .footer-section .footer-contact .right-side {
+    font-size: 0.8em;
+  }
+  .container .body-container .footer-section .copyright {
+    font-size: 0.6em;
+  }
+}
+
+@media only screen and (max-width: 798px) {
+  .container .body-container .body-content .services-section .services-cards {
+    -ms-grid-columns: 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
+  }
+  .container .body-container .why-us-section .whyus-content {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .container .navbar .right-nav a {
+    display: none;
+  }
+  .container .navbar .right-nav a.icon {
+    float: right;
+    display: block;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .container .navbar .right-nav.responsive {
+    position: relative;
+  }
+  .container .navbar .right-nav.responsive .icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  .container .navbar .right-nav.responsive a {
+    float: none;
+    display: block;
+    text-align: left;
+  }
+  .container .navbar .right-nav.responsive a.main-element {
+    margin-top: 45px;
+  }
+  .container .background .main-content {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .container .background .main-content .left-content .logo img {
+    margin-top: -85px;
+  }
+  .container .background .main-content .right-content .main-title {
+    font-size: 1em;
+    margin-top: -65px;
+  }
+}
+
+@media screen and (max-width: 850px) {
+  html {
+    overflow-x: hidden;
+  }
+  .container .main-footer-content .left-side {
+    font-size: 0.5em;
+  }
+  .container .body-container .body-content .services-section .services-cards {
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+  }
+  .container .body-container .about-us-section .about-us-content {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+  }
+  .container .body-container .about-us-section .about-us-content .about-right {
+    -ms-flex-item-align: center;
+        -ms-grid-row-align: center;
+        align-self: center;
+    gap: 20px;
+  }
+  .container-quote .main-content .right-side form .form-wrapper,
+  .container-quote .main-content .right-side form #dynamic-form .additional-info,
+  .container-quote .main-content .right-side form #dynamic-form .moving-form,
+  .container-quote .main-content .right-side form #dynamic-form .labor-only,
+  .container-quote .main-content .right-side form #dynamic-form .tv-wall-mount,
+  .container-quote .main-content .right-side form #dynamic-form .delivery,
+  .container-quote .main-content .right-side form #dynamic-form .three-column,
+  .container-quote .main-content .right-side form #dynamic-form .furniture-assembly,
+  .container-quote .main-content .right-side form #dynamic-form .packing,
+  .container-quote .main-content {
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+    font-size: 0.8em;
+  }
+  .container-quote .main-content .right-side form .bottom-form {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+    font-size: 0.8em;
+    padding: 0px;
+  }
+  .container-quote .main-content .right-side form .bottom-form .additional-comment {
+    width: 100%;
+  }
+  .container-quote .main-content .right-side form .bottom-form .additional-comment textarea {
+    width: 80%;
+  }
+  .container-quote .main-content .right-side form .bottom-form .time-choice .time-options {
+    width: 87vw;
+  }
+  .container-quote .main-content .left-side {
+    display: none;
+  }
+  .container-quote .main-content .left-side .logo {
+    display: none;
+  }
+  input {
+    height: 30px;
+  }
+}
+
 body {
   margin: 0;
   -webkit-box-sizing: border-box;
@@ -69,12 +311,41 @@ body {
 }
 
 .container-quote .main-content .left-side {
-  background-color: #20356A;
+  width: 100%;
   height: 100vh;
+  position: relative;
+  background-color: #20356A;
+}
+
+.container-quote .main-content .left-side:after {
+  background-image: url("../../media/boxes.jpeg");
+  content: '';
+  width: 100%;
+  height: 100vh;
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0.3;
+}
+
+.container-quote .main-content .left-side .logo {
+  position: relative;
+  z-index: 1;
 }
 
 .container-quote .main-content .left-side .logo img {
   width: 100%;
+}
+
+.container-quote .main-content .left-side .logo .quote-overlay {
+  position: relative;
+  z-index: 1;
+}
+
+.container-quote .main-content .left-side .logo .quote-overlay h1, .container-quote .main-content .left-side .logo .quote-overlay h3 {
+  color: #F8CB5C;
+  text-align: center;
+  font-family: 'Raleway', sans-serif;
 }
 
 .container-quote .main-content .right-side {
