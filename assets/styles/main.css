@@ -408,6 +408,10 @@ body {
   border-radius: 5px;
 }
 
+.container .body-container .about-us-section .about-us-content .about-left iframe {
+  width: 100%;
+}
+
 .container .body-container .about-us-section .about-us-content .about-right {
   display: -webkit-box;
   display: -ms-flexbox;
