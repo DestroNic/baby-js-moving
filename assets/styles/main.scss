@@ -3,8 +3,12 @@
 
 
 html {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
     background-color: $blue;
     scroll-behavior: smooth;
+
 }
 
 body{
@@ -12,10 +16,11 @@ body{
     box-sizing: border-box;
     padding: 0;
     font-family: 'Raleway', sans-serif;
+    // overflow-y: hidden;
 }
 
 .container {
-
+    
     .navbar {
         @include flex-display();
         background-color: $yellow;
@@ -67,6 +72,7 @@ body{
     }
 
     .background {
+        height: 79vh;
         .background-image{
             background-image: url("../../media/erik-mclean-dAs9vy68cW8-unsplash.jpg");
             background-repeat: no-repeat;
@@ -80,7 +86,7 @@ body{
         }
         .overlay {
             background-color: $overlay;
-            opacity: 0.58;
+            opacity: 0.7;
             z-index: -1;
             width: 100%;
             height: 100%;
@@ -90,48 +96,45 @@ body{
     
             .main-content {
                 display: grid;
-                grid-template-columns: 1fr 1fr;
-                z-index: 1;
-                position: inherit;
-                .left-content {
-                    margin: 100px auto;
-                    .logo {
-                        img {
-                          width: 750px;
-                        }
-                        
+                grid-template-columns: 1fr 1fr 1fr;
+                justify-items: center;
+                gap: 0 130px;
+                width: 85%;
+                margin: 0 auto;
+                align-items: center;
+                height: 100%;
+                .left-content{
+                    img{
+                        width: 650px;
+                    }
+                    p {
+                        color: white;
+                        text-align: center;
+                        font-size: 1.8em;
                     }
                 }
-                .right-content {
-                    display: flex;
-                    flex-direction: column;
-                    justify-content: center;
-                    align-items: center;
-                    text-align: center;
-                    .main-title {
-                        font-size: 3.5em;
-                        color: $yellow;
-                        font-style: italic;
-                        text-align: center;
-
-                        p {
-                            padding: 0 108px;
-                        }
-                    }
+                .center-content{
                     .yellow-button{
-                        
-                        .btn {
+                        .btn{
                             @include button();
-                            
-                            &:hover {
-                                background-color: white;
-                            }
                         }
-
+                        
                     }
-                    .call-us {
-                        color: white;
-                        font-size: 1.4em;
+                    .call-us{
+                        p {
+                            color: white;
+                            text-align: center;
+                            font-size: 1.3em;
+                        }
+                    }
+                }
+                .right-content{
+                    .main-title{
+                        p{
+                            color: $yellow;
+                            font-style: italic;
+                            font-size: 2em;
+                        }
                     }
                 }
             }
@@ -331,46 +334,55 @@ body{
 
         }
 
-        .footer-section {
-            background-color: $blue;
-            color: white;
-            
-            .footer-contact{
-                display: flex;
-                justify-content: center;
-                align-items: center;
-                margin-top: 50px;
-
-                .left-side {
-                    margin-top: 25px;
-                    .btn {
-                        @include button();
-                        background-color: $blue;
-                        border: 1px solid white;
-                        color: white;
-
-                        &:hover {
-                            color: black;
-                            background-color: white;
-                        }
-
-                    }
-                }
-
-                .right-side{
-                    width: 300px;
-                    text-align: center;
-                    margin-top: 25px;
-                }
-            }
-
-            .copyright {
-                text-align: center;
-            }
-        }
+        
     
     }
+    .footer-section {
+        background-color: $blue;
+        color: white;
+        
+        .footer-contact{
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            width: 70%;
+            margin: auto;
+            justify-content: center;
+            align-items: center;
+            margin-top: 50px;
 
+            .left-side {
+                table{
+                    margin-top: 25px;
+                }
+            }
+
+            .center {
+                margin-top: 25px;
+                .btn {
+                    @include button();
+                    background-color: $blue;
+                    border: 1px solid white;
+                    color: white;
+
+                    &:hover {
+                        color: black;
+                        background-color: white;
+                    }
+
+                }
+            }
+
+            .right-side{
+                width: 300px;
+                text-align: center;
+                margin-top: 25px;
+            }
+        }
+
+        .copyright {
+            text-align: center;
+        }
+    }
 
 }
 

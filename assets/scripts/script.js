@@ -59,6 +59,11 @@ const responsiveMenu = () => {
                     <input name="number-movers" type="text">
                 </div>
             </div>
+            <div class="labor-upload">
+                <p>Please add a photo of the item you are inquiring about</p>    
+                <input type="file" name="file[]" id="file" accept="image/*" multiple/>
+                <label for="file" id="file-text"><i class="material-icons">add_photo_alternate</i>Choose a photo</label>
+                </div>
             `;
             document.getElementById("submit-button").setAttribute("name","moving");
 
@@ -165,7 +170,12 @@ const responsiveMenu = () => {
                     </div>
                     
                     </div>
-                    <h3 style="text-align:center">Please use the comment box to provide a brief description of the item and the quantity</h3>                  
+                    <h3 style="text-align:center">Please use the comment box to provide a brief description of the item and the quantity</h3>
+                    <div class="labor-upload">
+                <p>Please add a photo of the item you are inquiring about</p>    
+                <input type="file" name="file[]" id="file" accept="image/*" multiple/>
+                <label for="file" id="file-text"><i class="material-icons">add_photo_alternate</i>Choose a photo</label>
+                </div>                  
             `;
             document.getElementById("submit-button").setAttribute("name","delivery");
         } 

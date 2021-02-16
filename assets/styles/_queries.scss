@@ -3,11 +3,17 @@
         font-size: 1em;
     }
     
-    .container .background .main-content .left-content .logo img{
+    .container .background .main-content .left-content img{
         width: 500px;
     }
 
-    .container .background .main-content .right-content .main-title{
+    .container .background .main-content .center-content .yellow-button .btn{
+        width: 180px;
+        height: 80px;
+        font-size: 1em;
+    }
+
+    .container .background .main-content .right-content p{
         font-size: 2.5em;
     }
 
@@ -21,15 +27,73 @@
     }
 }
 
+@media only screen and (max-width: 1350px){
+    .container .background .main-content {
+        gap: 0 50px;
+        .left-content{
+            img {
+                width: 450px;
+            }
+            p{
+                font-size: 1.5em;
+            }
+        }
+        
+        .center-content{ 
+            .yellow-button {
+                .btn{
+                    height: 60px;
+                    }
+                }
+                .call-us{
+                    p{
+                        font-size: 1em;
+                    }
+                }
+            }
+        .right-content{
+            .main-title{
+                font-size: 0.8em;
+            }
+        }
+    }
+}
 
+@media only screen and (max-width: 1200px){
+    .container .background .main-content {
+        gap: 0 50px;
+        .left-content{
+            img {
+                width: 450px;
+            }
+            p{
+                font-size: 1.5em;
+            }
+        }
+        
+        .center-content .yellow-button .btn{
+            height: 60px;
+        }
+        
+        .right-content{
+            .main-title{
+                font-size: 0.8em;
+            }
+        }
+    }
+    
+    .container .footer-section .footer-contact {
+        width: 90%;
+        overflow-y: hidden;
+    }
+}
 
 @media only screen and (max-width: 1088px) {
-    .container .background .main-content .right-content .main-title{
+    .container .background .main-content .right-content p{
         font-size: 2em;
-    }
-    .container .background .main-content .right-content .main-title p{
         padding: 0px;
     }
+
     .container .body-container .body-content{
         width: 95%;
     }
@@ -38,41 +102,69 @@
         width: 240px;
         height: 60px;
     }
+    .container .footer-section .footer-contact {
+        .center {
+            .btn {
+                width: 180px;
+                font-size: 1em;
+                margin: auto;
+            }
+        }
+    }
 }
 
 @media only screen and (max-width:952px) {
+
+    
 
     .container .navbar .left-nav p{
         font-size: 1em;
     }
     .container .navbar{
-        font-size: 0.8em;
+        font-size: 1em;
     }
     
     .container .background{
         height: 460px;
     }
-    .container .background .main-content .left-content .logo img{
-        width: 300px;
+
+    .container .background .main-content {
+        gap: 0 50px;
+        .left-content{
+            img {
+                width: 350px;
+            }
+            p{
+                font-size: 1.2em;
+            }
+        }
+        
+        .center-content{ 
+            .yellow-button {
+                .btn{
+                    height: 60px;
+                    font-size: 0.9em;
+                    }
+                }
+                .call-us{
+                    p{
+                        font-size: 1em;
+                    }
+                }
+            }
+        .right-content{
+            .main-title{
+                font-size: 0.7em;
+            }
+        }
     }
     
-    .container .background .main-content .right-content .main-title p{
-        font-size: 0.8em;
-    }
-
-    .container .background .main-content .right-content .yellow-button .btn{
-        width: 180px;
-        height: 40px;
-        font-size: 0.8em;
-    }
 
     .container .background .main-footer{
-        font-size: 0.8em;
+        font-size: 1em;
     }
 
-    .container .background .main-content .right-content .call-us{
-        font-size: 0.8em;
-    }
+
 
     
     .container .main-footer-content .right-side {
@@ -80,11 +172,11 @@
     }
 
     .container .main-footer-content {
-        height: 160px;
+        height: 200px;
     }
 
     .container .main-footer-content .left-side {
-        font-size: 0.8em;
+        font-size: 1em;
     }
     
     .container .body-container .body-content .services-section .header h1 {
@@ -92,7 +184,7 @@
     }
 
     .container .body-container .body-content .services-section .services-cards .card .service-description {
-        font-size: 0.8em;
+        font-size: 1em;
     }
 
     .container .body-container .why-us-section .header h1 {
@@ -100,12 +192,12 @@
     }
 
     .container .body-container .why-us-section .whyus-content .left-side .content-card {
-        font-size: 0.8em;
+        font-size: 1em;
         height: 72%;
     }
 
     .container .body-container .about-us-section .about-us-content .about-right .about-info-wrapper .about-info{
-        font-size: 0.8em;
+        font-size: 1em;
     }
 
     .container .body-container .about-us-section .header h1{
@@ -117,20 +209,35 @@
         width: 400px;
     }
 
-    .container .body-container .footer-section .footer-contact .left-side .btn {
+    .container .footer-section .footer-contact {
+        grid-template-columns: 1px 1fr 1fr;
+    }
+
+    .container .footer-section .footer-contact .left-side {
+        visibility: collapse;
+        width: 1px;
+    }
+
+    .container .body-container .footer-section .footer-contact .center .btn {
         width: 180px;
         height: 40px;
-        font-size: 0.8em;
+        font-size: 1em;
     }
 
     .container .body-container .footer-section .footer-contact .right-side{
-        font-size: 0.8em;
+        font-size: 1em;
     }
 
     .container .body-container .footer-section .copyright {
         font-size: 0.6em;
     }
 
+}
+
+@media only screen and (max-width:894px){
+    .container .background .main-content {
+        grid-template-columns: 1fr 1fr;
+    }
 }
 
 @media only screen and (max-width: 798px) {
@@ -145,12 +252,68 @@
 
 }
 
+@media only screen and (max-width: 670px){
+    .container .background .main-content{
+        display: flex;
+        flex-direction: column;
+    }
+}
+
 @media screen and (max-width: 600px) {
     .container .navbar .right-nav a {display: none;}
     .container .navbar .right-nav a.icon {
       float: right;
       display: block;
     }
+    
+    .container .background .main-content {
+        gap: 0 50px;
+        .left-content{
+            img {
+                width: 250px;
+                margin-top: 0px;
+            }
+            p{
+                font-size: 1em;
+            }
+        }
+        
+        .center-content{ 
+            .yellow-button {
+                .btn{
+                    height: 40px;
+                    width: 130px;
+                    font-size: 0.8em;
+                    }
+                }
+                .call-us{
+                    p{
+                        font-size: 1em;
+                    }
+                }
+            }
+        .right-content{
+            .main-title{
+                // font-size: 0.8em;
+                p{
+                    font-size: 1.5em;
+                    margin-top: 0px;
+                    text-align: center;
+                }
+            }
+        }
+    }
+    .container .main-footer-content{
+        margin-top: 0px;
+    }
+    
+    .container .body-container .footer-section .footer-contact{
+        grid-template-columns: 1px 1fr 1px;
+    }
+    .container .body-container .footer-section .footer-contact .right-side{
+        display: none;
+    }
+
   }
   
   @media screen and (max-width: 600px) {
@@ -181,11 +344,11 @@
        
     }
 
-    .container .background .main-content .left-content .logo img {
+    .container .background .main-content .left-content img {
         margin-top: -85px;
     }
 
-    .container .background .main-content .right-content .main-title {
+    .container .background .main-content .right-content p {
         font-size: 1em;
         margin-top: -65px;
     }
@@ -196,9 +359,13 @@
     html {
         overflow-x: hidden;
     }
+    
 
-    .container .main-footer-content .left-side{
-        font-size: 0.5em;
+    .container .main-footer-content{ 
+        height: 150px;
+        .left-side{
+        font-size: 0.7em;
+        }
     }
 
     .container .body-container .body-content .services-section .services-cards{
@@ -227,13 +394,13 @@
     .container-quote .main-content
      {
         grid-template-columns: 1fr;
-        font-size: 0.8em;
+        font-size: 1em;
     }
 
     .container-quote .main-content .right-side form .bottom-form {
         display: grid;
         grid-template-columns: 1fr;
-        font-size: 0.8em;
+        font-size: 1em;
         padding: 0px;
     }
 

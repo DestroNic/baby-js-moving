@@ -2,10 +2,15 @@
   .container .navbar .right-nav {
     font-size: 1em;
   }
-  .container .background .main-content .left-content .logo img {
+  .container .background .main-content .left-content img {
     width: 500px;
   }
-  .container .background .main-content .right-content .main-title {
+  .container .background .main-content .center-content .yellow-button .btn {
+    width: 180px;
+    height: 80px;
+    font-size: 1em;
+  }
+  .container .background .main-content .right-content p {
     font-size: 2.5em;
   }
   .container .background {
@@ -17,11 +22,52 @@
   }
 }
 
-@media only screen and (max-width: 1088px) {
-  .container .background .main-content .right-content .main-title {
-    font-size: 2em;
+@media only screen and (max-width: 1350px) {
+  .container .background .main-content {
+    gap: 0 50px;
   }
-  .container .background .main-content .right-content .main-title p {
+  .container .background .main-content .left-content img {
+    width: 450px;
+  }
+  .container .background .main-content .left-content p {
+    font-size: 1.5em;
+  }
+  .container .background .main-content .center-content .yellow-button .btn {
+    height: 60px;
+  }
+  .container .background .main-content .center-content .call-us p {
+    font-size: 1em;
+  }
+  .container .background .main-content .right-content .main-title {
+    font-size: 0.8em;
+  }
+}
+
+@media only screen and (max-width: 1200px) {
+  .container .background .main-content {
+    gap: 0 50px;
+  }
+  .container .background .main-content .left-content img {
+    width: 450px;
+  }
+  .container .background .main-content .left-content p {
+    font-size: 1.5em;
+  }
+  .container .background .main-content .center-content .yellow-button .btn {
+    height: 60px;
+  }
+  .container .background .main-content .right-content .main-title {
+    font-size: 0.8em;
+  }
+  .container .footer-section .footer-contact {
+    width: 90%;
+    overflow-y: hidden;
+  }
+}
+
+@media only screen and (max-width: 1088px) {
+  .container .background .main-content .right-content p {
+    font-size: 2em;
     padding: 0px;
   }
   .container .body-container .body-content {
@@ -31,6 +77,11 @@
     width: 240px;
     height: 60px;
   }
+  .container .footer-section .footer-contact .center .btn {
+    width: 180px;
+    font-size: 1em;
+    margin: auto;
+  }
 }
 
 @media only screen and (max-width: 952px) {
@@ -38,52 +89,57 @@
     font-size: 1em;
   }
   .container .navbar {
-    font-size: 0.8em;
+    font-size: 1em;
   }
   .container .background {
     height: 460px;
   }
-  .container .background .main-content .left-content .logo img {
-    width: 300px;
+  .container .background .main-content {
+    gap: 0 50px;
   }
-  .container .background .main-content .right-content .main-title p {
-    font-size: 0.8em;
+  .container .background .main-content .left-content img {
+    width: 350px;
   }
-  .container .background .main-content .right-content .yellow-button .btn {
-    width: 180px;
-    height: 40px;
-    font-size: 0.8em;
+  .container .background .main-content .left-content p {
+    font-size: 1.2em;
+  }
+  .container .background .main-content .center-content .yellow-button .btn {
+    height: 60px;
+    font-size: 0.9em;
+  }
+  .container .background .main-content .center-content .call-us p {
+    font-size: 1em;
+  }
+  .container .background .main-content .right-content .main-title {
+    font-size: 0.7em;
   }
   .container .background .main-footer {
-    font-size: 0.8em;
-  }
-  .container .background .main-content .right-content .call-us {
-    font-size: 0.8em;
+    font-size: 1em;
   }
   .container .main-footer-content .right-side {
     display: none;
   }
   .container .main-footer-content {
-    height: 160px;
+    height: 200px;
   }
   .container .main-footer-content .left-side {
-    font-size: 0.8em;
+    font-size: 1em;
   }
   .container .body-container .body-content .services-section .header h1 {
     font-size: 2em;
   }
   .container .body-container .body-content .services-section .services-cards .card .service-description {
-    font-size: 0.8em;
+    font-size: 1em;
   }
   .container .body-container .why-us-section .header h1 {
     font-size: 2em;
   }
   .container .body-container .why-us-section .whyus-content .left-side .content-card {
-    font-size: 0.8em;
+    font-size: 1em;
     height: 72%;
   }
   .container .body-container .about-us-section .about-us-content .about-right .about-info-wrapper .about-info {
-    font-size: 0.8em;
+    font-size: 1em;
   }
   .container .body-container .about-us-section .header h1 {
     font-size: 2em;
@@ -92,16 +148,31 @@
     height: 350px;
     width: 400px;
   }
-  .container .body-container .footer-section .footer-contact .left-side .btn {
+  .container .footer-section .footer-contact {
+    -ms-grid-columns: 1px 1fr 1fr;
+        grid-template-columns: 1px 1fr 1fr;
+  }
+  .container .footer-section .footer-contact .left-side {
+    visibility: collapse;
+    width: 1px;
+  }
+  .container .body-container .footer-section .footer-contact .center .btn {
     width: 180px;
     height: 40px;
-    font-size: 0.8em;
+    font-size: 1em;
   }
   .container .body-container .footer-section .footer-contact .right-side {
-    font-size: 0.8em;
+    font-size: 1em;
   }
   .container .body-container .footer-section .copyright {
     font-size: 0.6em;
+  }
+}
+
+@media only screen and (max-width: 894px) {
+  .container .background .main-content {
+    -ms-grid-columns: 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
   }
 }
 
@@ -121,6 +192,18 @@
   }
 }
 
+@media only screen and (max-width: 670px) {
+  .container .background .main-content {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+
 @media screen and (max-width: 600px) {
   .container .navbar .right-nav a {
     display: none;
@@ -128,6 +211,39 @@
   .container .navbar .right-nav a.icon {
     float: right;
     display: block;
+  }
+  .container .background .main-content {
+    gap: 0 50px;
+  }
+  .container .background .main-content .left-content img {
+    width: 250px;
+    margin-top: 0px;
+  }
+  .container .background .main-content .left-content p {
+    font-size: 1em;
+  }
+  .container .background .main-content .center-content .yellow-button .btn {
+    height: 40px;
+    width: 130px;
+    font-size: 0.8em;
+  }
+  .container .background .main-content .center-content .call-us p {
+    font-size: 1em;
+  }
+  .container .background .main-content .right-content .main-title p {
+    font-size: 1.5em;
+    margin-top: 0px;
+    text-align: center;
+  }
+  .container .main-footer-content {
+    margin-top: 0px;
+  }
+  .container .body-container .footer-section .footer-contact {
+    -ms-grid-columns: 1px 1fr 1px;
+        grid-template-columns: 1px 1fr 1px;
+  }
+  .container .body-container .footer-section .footer-contact .right-side {
+    display: none;
   }
 }
 
@@ -163,10 +279,10 @@
         -ms-flex-align: center;
             align-items: center;
   }
-  .container .background .main-content .left-content .logo img {
+  .container .background .main-content .left-content img {
     margin-top: -85px;
   }
-  .container .background .main-content .right-content .main-title {
+  .container .background .main-content .right-content p {
     font-size: 1em;
     margin-top: -65px;
   }
@@ -176,8 +292,11 @@
   html {
     overflow-x: hidden;
   }
+  .container .main-footer-content {
+    height: 150px;
+  }
   .container .main-footer-content .left-side {
-    font-size: 0.5em;
+    font-size: 0.7em;
   }
   .container .body-container .body-content .services-section .services-cards {
     -ms-grid-columns: 1fr;
@@ -210,14 +329,14 @@
   .container-quote .main-content {
     -ms-grid-columns: 1fr;
         grid-template-columns: 1fr;
-    font-size: 0.8em;
+    font-size: 1em;
   }
   .container-quote .main-content .right-side form .bottom-form {
     display: -ms-grid;
     display: grid;
     -ms-grid-columns: 1fr;
         grid-template-columns: 1fr;
-    font-size: 0.8em;
+    font-size: 1em;
     padding: 0px;
   }
   .container-quote .main-content .right-side form .bottom-form .additional-comment {
@@ -927,10 +1046,15 @@ body {
   .container .navbar .right-nav {
     font-size: 1em;
   }
-  .container .background .main-content .left-content .logo img {
+  .container .background .main-content .left-content img {
     width: 500px;
   }
-  .container .background .main-content .right-content .main-title {
+  .container .background .main-content .center-content .yellow-button .btn {
+    width: 180px;
+    height: 80px;
+    font-size: 1em;
+  }
+  .container .background .main-content .right-content p {
     font-size: 2.5em;
   }
   .container .background {
@@ -942,11 +1066,52 @@ body {
   }
 }
 
-@media only screen and (max-width: 1088px) {
-  .container .background .main-content .right-content .main-title {
-    font-size: 2em;
+@media only screen and (max-width: 1350px) {
+  .container .background .main-content {
+    gap: 0 50px;
   }
-  .container .background .main-content .right-content .main-title p {
+  .container .background .main-content .left-content img {
+    width: 450px;
+  }
+  .container .background .main-content .left-content p {
+    font-size: 1.5em;
+  }
+  .container .background .main-content .center-content .yellow-button .btn {
+    height: 60px;
+  }
+  .container .background .main-content .center-content .call-us p {
+    font-size: 1em;
+  }
+  .container .background .main-content .right-content .main-title {
+    font-size: 0.8em;
+  }
+}
+
+@media only screen and (max-width: 1200px) {
+  .container .background .main-content {
+    gap: 0 50px;
+  }
+  .container .background .main-content .left-content img {
+    width: 450px;
+  }
+  .container .background .main-content .left-content p {
+    font-size: 1.5em;
+  }
+  .container .background .main-content .center-content .yellow-button .btn {
+    height: 60px;
+  }
+  .container .background .main-content .right-content .main-title {
+    font-size: 0.8em;
+  }
+  .container .footer-section .footer-contact {
+    width: 90%;
+    overflow-y: hidden;
+  }
+}
+
+@media only screen and (max-width: 1088px) {
+  .container .background .main-content .right-content p {
+    font-size: 2em;
     padding: 0px;
   }
   .container .body-container .body-content {
@@ -956,6 +1121,11 @@ body {
     width: 240px;
     height: 60px;
   }
+  .container .footer-section .footer-contact .center .btn {
+    width: 180px;
+    font-size: 1em;
+    margin: auto;
+  }
 }
 
 @media only screen and (max-width: 952px) {
@@ -963,52 +1133,57 @@ body {
     font-size: 1em;
   }
   .container .navbar {
-    font-size: 0.8em;
+    font-size: 1em;
   }
   .container .background {
     height: 460px;
   }
-  .container .background .main-content .left-content .logo img {
-    width: 300px;
+  .container .background .main-content {
+    gap: 0 50px;
   }
-  .container .background .main-content .right-content .main-title p {
-    font-size: 0.8em;
+  .container .background .main-content .left-content img {
+    width: 350px;
   }
-  .container .background .main-content .right-content .yellow-button .btn {
-    width: 180px;
-    height: 40px;
-    font-size: 0.8em;
+  .container .background .main-content .left-content p {
+    font-size: 1.2em;
+  }
+  .container .background .main-content .center-content .yellow-button .btn {
+    height: 60px;
+    font-size: 0.9em;
+  }
+  .container .background .main-content .center-content .call-us p {
+    font-size: 1em;
+  }
+  .container .background .main-content .right-content .main-title {
+    font-size: 0.7em;
   }
   .container .background .main-footer {
-    font-size: 0.8em;
-  }
-  .container .background .main-content .right-content .call-us {
-    font-size: 0.8em;
+    font-size: 1em;
   }
   .container .main-footer-content .right-side {
     display: none;
   }
   .container .main-footer-content {
-    height: 160px;
+    height: 200px;
   }
   .container .main-footer-content .left-side {
-    font-size: 0.8em;
+    font-size: 1em;
   }
   .container .body-container .body-content .services-section .header h1 {
     font-size: 2em;
   }
   .container .body-container .body-content .services-section .services-cards .card .service-description {
-    font-size: 0.8em;
+    font-size: 1em;
   }
   .container .body-container .why-us-section .header h1 {
     font-size: 2em;
   }
   .container .body-container .why-us-section .whyus-content .left-side .content-card {
-    font-size: 0.8em;
+    font-size: 1em;
     height: 72%;
   }
   .container .body-container .about-us-section .about-us-content .about-right .about-info-wrapper .about-info {
-    font-size: 0.8em;
+    font-size: 1em;
   }
   .container .body-container .about-us-section .header h1 {
     font-size: 2em;
@@ -1017,16 +1192,31 @@ body {
     height: 350px;
     width: 400px;
   }
-  .container .body-container .footer-section .footer-contact .left-side .btn {
+  .container .footer-section .footer-contact {
+    -ms-grid-columns: 1px 1fr 1fr;
+        grid-template-columns: 1px 1fr 1fr;
+  }
+  .container .footer-section .footer-contact .left-side {
+    visibility: collapse;
+    width: 1px;
+  }
+  .container .body-container .footer-section .footer-contact .center .btn {
     width: 180px;
     height: 40px;
-    font-size: 0.8em;
+    font-size: 1em;
   }
   .container .body-container .footer-section .footer-contact .right-side {
-    font-size: 0.8em;
+    font-size: 1em;
   }
   .container .body-container .footer-section .copyright {
     font-size: 0.6em;
+  }
+}
+
+@media only screen and (max-width: 894px) {
+  .container .background .main-content {
+    -ms-grid-columns: 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
   }
 }
 
@@ -1046,6 +1236,18 @@ body {
   }
 }
 
+@media only screen and (max-width: 670px) {
+  .container .background .main-content {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+
 @media screen and (max-width: 600px) {
   .container .navbar .right-nav a {
     display: none;
@@ -1053,6 +1255,39 @@ body {
   .container .navbar .right-nav a.icon {
     float: right;
     display: block;
+  }
+  .container .background .main-content {
+    gap: 0 50px;
+  }
+  .container .background .main-content .left-content img {
+    width: 250px;
+    margin-top: 0px;
+  }
+  .container .background .main-content .left-content p {
+    font-size: 1em;
+  }
+  .container .background .main-content .center-content .yellow-button .btn {
+    height: 40px;
+    width: 130px;
+    font-size: 0.8em;
+  }
+  .container .background .main-content .center-content .call-us p {
+    font-size: 1em;
+  }
+  .container .background .main-content .right-content .main-title p {
+    font-size: 1.5em;
+    margin-top: 0px;
+    text-align: center;
+  }
+  .container .main-footer-content {
+    margin-top: 0px;
+  }
+  .container .body-container .footer-section .footer-contact {
+    -ms-grid-columns: 1px 1fr 1px;
+        grid-template-columns: 1px 1fr 1px;
+  }
+  .container .body-container .footer-section .footer-contact .right-side {
+    display: none;
   }
 }
 
@@ -1088,10 +1323,10 @@ body {
         -ms-flex-align: center;
             align-items: center;
   }
-  .container .background .main-content .left-content .logo img {
+  .container .background .main-content .left-content img {
     margin-top: -85px;
   }
-  .container .background .main-content .right-content .main-title {
+  .container .background .main-content .right-content p {
     font-size: 1em;
     margin-top: -65px;
   }
@@ -1101,8 +1336,11 @@ body {
   html {
     overflow-x: hidden;
   }
+  .container .main-footer-content {
+    height: 150px;
+  }
   .container .main-footer-content .left-side {
-    font-size: 0.5em;
+    font-size: 0.7em;
   }
   .container .body-container .body-content .services-section .services-cards {
     -ms-grid-columns: 1fr;
@@ -1135,14 +1373,14 @@ body {
   .container-quote .main-content {
     -ms-grid-columns: 1fr;
         grid-template-columns: 1fr;
-    font-size: 0.8em;
+    font-size: 1em;
   }
   .container-quote .main-content .right-side form .bottom-form {
     display: -ms-grid;
     display: grid;
     -ms-grid-columns: 1fr;
         grid-template-columns: 1fr;
-    font-size: 0.8em;
+    font-size: 1em;
     padding: 0px;
   }
   .container-quote .main-content .right-side form .bottom-form .additional-comment {
